@@ -98,6 +98,7 @@ div.phone {
   width: 200px;
   padding: 5px;
   margin-top: 5px;
+  margin-left: -20px;
   box-sizing: border-box;
 }
 
