@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Play&family=Titillium+Web:wght@300&display=swap');
 
 header {
@@ -120,4 +121,128 @@ div.phone {
 .sidebar li a:hover {
   color: #ffe;
   background: rgb(233, 141, 228);
+=======
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Play&family=Titillium+Web:wght@300&display=swap');
+
+header {
+  width: 100%;
+  color: rgb(35, 22, 153);
+  margin-top: -17px;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Play', sans-serif;
+}
+
+.header a {
+  color: brown;
+}
+
+.header a:hover {
+  color: rgb(255, 0, 191);
+  transform: scale;
+}
+
+.menu ul {
+  display: flex;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6caca;
+  padding: 10px;
+}
+
+.info a {
+  display:inline;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding: 7px;
+  
+  
+}
+
+
+
+.menu ul li a {
+  color: rgb(156, 40, 151);
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease-in all;
+}
+
+.menu ul li a:hover {
+  color: brown;
+  transform: scale(1.1);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+footer {
+  font-size: 16px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  color: rgb(35, 22, 153);
+}
+
+footer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6caca;
+  padding: 0;
+  margin: -13px;;
+}
+
+div.phone {
+  background-color: rgb(201, 172, 172);
+  display: block;
+  text-align: center;
+}
+
+.menu ul li {
+  margin-right: 25px;
+}
+
+.phone a {
+  color: black;
+  font-size: 13px;
+}
+
+.sidebar {
+  display: block;
+  position:absolute;
+  font-size: 13px;
+  width: 200px;
+  padding: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: rgb(67, 41, 107);
+  display: block;
+  text-decoration: none;
+  transition: 0.3s ease-in all;
+  margin-left: -20px;
+}
+
+.sidebar li a:hover {
+  color: #ffe;
+  background: rgb(233, 141, 228);
+>>>>>>> Stashed changes
 }
