@@ -3,7 +3,6 @@
 header {
   width: 100%;
   color: rgb(35, 22, 153);
-
 }
 
 body {
@@ -121,4 +120,9 @@ div.phone {
   /* Добавляет 10px разрыв между столбцами и строками */
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+}
+
+.container1 {
+  margin: 2px 0 0px 0px;
+  float: right;
 }
