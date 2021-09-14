@@ -130,3 +130,120 @@ div.phone {
 .container1 {
   margin: 2px 0 0px 0px;
 }
+
+
+
+
+
+.main {
+  display: flex;
+}
+
+.main_left {
+  width: 30%;
+}
+
+.main_right {
+  width: 30%;
+}
+
+.sidebar_list {
+  list-style: none;
+}
+
+.sidebar_list li {
+  padding: 5px 15px;
+}
+
+.info-text {
+  width: 80%;
+
+}
+
+.info_text-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.info_text-description {
+  font-weight: 400;
+}
+
+.info.active {
+  background-color: black;
+  color: #d6caca;
+}
+
+.info.icon {
+  width: 20%;
+}
+
+.info {
+  margin-top: 30px;
+  display: flex;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.slider {
+  
+  border: 1px solid black;
+  
+  min-height: 200px;
+}
+
+.main_right-title {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.card1 {
+  border: 1 px solid gray;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+margin: 15px;
+}
+.card1:nth-child(odd){
+  mar
+
+}
+.card_img {
+  width: 161px;
+  height: 160px;
+  background-color: chartreuse;
+}
+
+.card_list {
+  display: flex;
+  justify-content:space-between;
+}
+
+.card_title {
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.card_price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_btn div:nth-child(1) {
+  background-color: coral;
+  color: cornsilk;
+}
+
+.card_btn div:last-child(2) {
+  background-color: darkmagenta;
+
+}
