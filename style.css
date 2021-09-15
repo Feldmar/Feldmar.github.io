@@ -11,6 +11,8 @@ header {
 
 body {
   height: 100%;
+  width: 100%;
+  min-width: 300px;
   font-size: 18px;
   font-family: 'Play', sans-serif;
 }
@@ -58,11 +60,10 @@ header .top {
   display: flex;
   list-style: none;
 }
+
 .info_tel {
   display: grid;
-  /* Создает 3 столбца, каждая шириной 1 fr */
   grid-template-columns: 0.2fr 1fr 1fr;
-  /* Добавляет 10px разрыв между столбцами и строками */
   grid-column-gap: 15px;
   grid-row-gap: 15px;
 }
@@ -75,11 +76,12 @@ header .top {
 
 
 footer {
- display:block;
-  position:absolute;
+  display: block;
+  position: absolute;
   left: 0;
   bottom: -600px;
   width: 100%;
+  min-width: 300px;
   font-size: 16px;
   overflow: hidden;
   color: rgb(85, 25, 35);
@@ -91,7 +93,7 @@ footer .menu {
   align-items: center;
   background-color: #d6caca;
   padding: 0;
- 
+
 }
 
 div.phone {
@@ -119,14 +121,9 @@ div.phone {
   display: block;
   position: absolute;
   font-size: 13px;
- 
   padding: 5px;
   margin-top: 5px;
-
-  
 }
-
-
 
 .sidebar_list ul li a {
   color: rgb(67, 41, 107);
@@ -138,12 +135,13 @@ div.phone {
   background: rgb(233, 141, 228);
 }
 
-
 .sidebar_list li {
   padding: 5px 15px;
- list-style: none;}
+  list-style: none;
 
-.sidebar_list a{
+}
+
+.sidebar_list a {
   text-decoration: none;
 }
 
@@ -153,25 +151,39 @@ div.phone {
 
 
 
-/* main */
+
 .main {
   display: flex;
+  width: 100%;
 }
+
 .main__left {
-  width: 30%;
+  display: block;
+  width: 15%;
   padding: 15px;
+  clear: right;
 }
+
 .main__right {
-  width: 70%;
-  padding: 15px;
+
+  width: 85%;
+  padding-top: 15px;
+  clear: right;
+
 }
+
 .main__right-title {
   text-align: center;
   margin-top: 30px;
   text-transform: uppercase;
 }
 
-/* info */
+
+
+
+
+
+
 .info {
   font-size: 10px;
   margin: 30px;
@@ -179,49 +191,72 @@ div.phone {
   padding: 15px;
   border: 1px solid black;
 }
+
 .info.active {
-  background-color: black;
+  display: flex;
+  position: relative;
+  background-color: rgb(212, 22, 22);
   color: #fff;
+  margin-top: 310px;
 }
+
 .info__icon {
   width: 20%;
 }
+
 .info__text {
   width: 80%;
 }
+
 .info__text-title {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 150;
 }
+
 .info__text-description {
-  font-weight: 300;
+  font-weight: 150;
 }
-/* slider */
+
+
+
+
+
+
 .slider {
-  border: 1px solid #000;
+  border: 1px solid rgb(153, 37, 37);
   min-height: 200px;
+  margin-right: 25px;
 }
-/* card-list */
+
+
+
+
+
+
 .card-list {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
+
 .card {
-  border: 2px solid gray;
+  border: 2px solid rgb(70, 168, 24);
   padding: 15px;
-  padding-bottom: 90px;
+  padding-bottom: 85px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-right: 25px;
 }
 
 .card__img {
   width: 160px;
   height: 160px;
-  background-color: black;
+  background-color: rgb(160, 56, 56);
   position: relative;
 }
+
 .card__img::before {
   content: '';
   position: absolute;
@@ -236,10 +271,12 @@ div.phone {
   font-size: 18px;
   line-height: 20px;
 }
+
 .card__prise {
   font-size: 16px;
   line-height: 18px;
 }
+
 .card__btn {
   width: 100%;
   display: flex;
@@ -250,16 +287,19 @@ div.phone {
   left: 0;
   width: 100%;
 }
+
 .card__btn div {
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .card__btn div:nth-child(1) {
   background-color: black;
-  color: #fff;
+  color: rgb(196, 88, 88);
 }
+
 .card__btn div:nth-child(2) {
-  background-color: gray;
+  background-color: rgb(167, 82, 82);
 }
