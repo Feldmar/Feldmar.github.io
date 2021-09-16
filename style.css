@@ -79,7 +79,7 @@ footer {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -600px;
+  bottom: -800px;
   width: 100%;
   min-width: 300px;
   font-size: 16px;
@@ -117,33 +117,98 @@ div.phone {
 
 
 
-.sidebar_list {
+
+
+
+
+
+
+
+.sidebar {
+  margin: 100px 0;
+
+
+}
+
+.sidebar ul li {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+/* убираем отступы и поля, а также list-style для "ul", 
+* и добавляем "position:relative" */
+
+
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+
+  position: relative;
+}
+
+
+/* применяем inline-block позиционирование к элементам навигации */
+.sidebar ul li {
+  margin: 0px 0 0 0;
   display: block;
-  position: absolute;
-  font-size: 13px;
-  padding: 5px;
-  margin-top: 5px;
-}
 
-.sidebar_list ul li a {
-  color: rgb(67, 41, 107);
-  transition: 0.3s ease-in all;
-}
-
-.sidebar_list li a:hover {
-  color: #ffe;
-  background: rgb(233, 141, 228);
-}
-
-.sidebar_list li {
-  padding: 5px 15px;
-  list-style: none;
 
 }
 
-.sidebar_list a {
+/* стилизуем ссылки */
+.sidebar a {
+  display: block;
+  padding: 5px 5px;
+  color: rgb(94, 37, 37);
+  font-size: 15px;
+  line-height: 40px;
   text-decoration: none;
 }
+
+/* изменяем цвет фона при наведении курсора */
+.sidebar a:hover {
+  background-color: #be71c5;
+}
+
+.sidebar ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+
+}
+
+/* отображаем выпадающий список при наведении */
+.sidebar ul li:hover>ul {
+  display: inherit;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* первый уровень выпадающего списка */
+.sidebar ul ul li {
+  min-width: 300px;
+  min-height: 50px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,7 +302,7 @@ div.phone {
 .card-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 15px;
 }
 
 .card {
@@ -304,10 +369,11 @@ div.phone {
 .card__btn div:nth-child(2) {
   background-color: rgb(167, 82, 82);
 }
-.btn{
-  border:1 px solid black;
+
+.btn {
+  border: 1 px solid black;
   background-color: gray;
-  color:black;
+  color: black;
   padding: 10px 15px;
   font-size: 14px;
   display: inline-flex;
@@ -315,35 +381,42 @@ div.phone {
   align-items: center;
   min-width: 175px;
 }
-.btn-darc{
-  background-color:black;
+
+.btn-darc {
+  background-color: black;
   color: #ffe;
 }
 
-.product_description-cartBtn .count{
+.product_description-cartBtn .count {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
-.product_description-cartBtn .count input{
+
+.product_description-cartBtn .count input {
   max-width: 90px;
 
 }
-.product_description-btn{
+
+.product_description-btn {
   margin-top: 15px;
 }
-.product_info{
+
+.product_info {
   display: flex;
 }
-.product_description{
-width: 50%;
-padding: 15px;
+
+.product_description {
+  width: 50%;
+  padding: 15px;
 }
-.product_description-title{
+
+.product_description-title {
   font-size: 22px;
   line-height: 25px;
 }
-.product_description-info{
+
+.product_description-info {
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -351,12 +424,13 @@ padding: 15px;
   margin-top: 15px;
 }
 
-.product_description-prise{
+.product_description-prise {
   font-size: 25px;
   font-weight: 600;
   margin-top: 20px;
 }
-.product_description-sail{
+
+.product_description-sail {
   display: flex;
   font-display: column;
   margin-top: 15px;
@@ -364,11 +438,13 @@ padding: 15px;
   font-size: 15px;
   line-height: 18px;
 }
-.product_description-cards{
+
+.product_description-cards {
   display: flex;
   margin-top: 15px;
 }
-.product_description-cards div{
+
+.product_description-cards div {
   border: 1px solid gray;
   border-radius: ;
   margin-right: 15px;
@@ -376,14 +452,17 @@ padding: 15px;
   font-size: 14px;
   font-weight: 700;
 }
-.product_description-cards .visa{
+
+.product_description-cards .visa {
   color: aqua;
 
 }
-.product_description-cards .master{
-color: brown;
+
+.product_description-cards .master {
+  color: brown;
 }
-.product_description-cartBtn{
+
+.product_description-cartBtn {
   margin-top: 15px;
   display: flex;
 }
@@ -396,16 +475,18 @@ color: brown;
 
 
 
-.product_slider{
+.product_slider {
   width: 50%;
-  
+
 }
-.product_slider-preview{
+
+.product_slider-preview {
   border: 1px solid black;
   max-height: 316px;
   min-height: 200px;
 }
-.product_slider-list{
+
+.product_slider-list {
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
@@ -413,7 +494,8 @@ color: brown;
   width: 100%;
 
 }
-.slider-item{
+
+.slider-item {
   border: 1px solid black;
   width: 41px;
   height: 41px;
