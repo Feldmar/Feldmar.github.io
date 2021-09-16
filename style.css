@@ -17,6 +17,13 @@ body {
   font-family: 'Play', sans-serif;
 }
 
+
+
+
+
+
+
+/* =========================ХЭДЕР=================================*/
 .header a {
   color: brown;
 }
@@ -42,13 +49,28 @@ header .top {
 text-decoration: none;}
 
 
+.info_tel {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
 
+.container1 {
+  margin: 2px 0 0px 0px;
+}
 .info_tel a {
   text-decoration: none;
   color: black;
   font-size: 15px;
 }
 
+
+
+
+
+
+/* =========================ПАНЕЛЬ НАВИГАЦИИ=================================*/
 .menu ul li a {
   color: rgb(156, 40, 151);
   display: block;
@@ -66,16 +88,6 @@ text-decoration: none;}
   list-style: none;
 }
 
-.info_tel {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
-}
-
-.container1 {
-  margin: 2px 0 0px 0px;
-}
 
 
 
@@ -91,6 +103,7 @@ text-decoration: none;}
 
 
 
+/* =========================САЙДБАР=================================*/
 
 
 .sidebar {
@@ -175,7 +188,7 @@ text-decoration: none;}
 
 
 
-
+/* =========================MAIN-Ы=================================*/
 
 .main {
   display: flex;
@@ -208,7 +221,7 @@ text-decoration: none;}
 
 
 
-
+/* =========================БЛОКИ С ИНФОРМАЦИЕЙ СЛЕВА=================================*/
 
 .info {
   font-size: 10px;
@@ -247,7 +260,7 @@ text-decoration: none;}
 
 
 
-
+/* =========================СЛАЙДЕР=================================*/
 .slider {
   border: 1px solid rgb(153, 37, 37);
   min-height: 200px;
@@ -257,7 +270,7 @@ text-decoration: none;}
 
 
 
-
+/* =========================КАРТОЧКИ ТОВАРОВ=================================*/
 
 .card-list {
   display: flex;
@@ -330,6 +343,13 @@ text-decoration: none;}
   background-color: rgb(167, 82, 82);
 }
 
+
+
+
+
+
+
+/* =========================ПРОДУКТ=================================*/
 .btn {
   border: 1 px solid black;
   background-color: gray;
@@ -433,7 +453,7 @@ text-decoration: none;}
 
 
 
-
+/* =========================ПРОДУКТ СЛАЙДЕР=================================*/
 
 .product_slider {
   width: 50%;
@@ -467,7 +487,7 @@ text-decoration: none;}
 
 
 
-
+/* =========================ФУТЕР=================================*/
 footer {
   display: block;
   position: absolute;
