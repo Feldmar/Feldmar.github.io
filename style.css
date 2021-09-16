@@ -36,7 +36,12 @@ header .top {
   align-items: center;
   background-color: #b9aaaa;
   padding: 10px;
+  
 }
+.top a{
+text-decoration: none;}
+
+
 
 .info_tel a {
   text-decoration: none;
@@ -75,42 +80,6 @@ header .top {
 
 
 
-footer {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -800px;
-  width: 100%;
-  min-width: 300px;
-  font-size: 16px;
-  overflow: hidden;
-  color: rgb(85, 25, 35);
-}
-
-footer .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d6caca;
-  padding: 0;
-
-}
-
-div.phone {
-  background-color: rgb(201, 172, 172);
-  display: block;
-  text-align: center;
-}
-
-.menu ul li {
-  margin-right: 25px;
-}
-
-.phone a {
-  color: black;
-  font-size: 13px;
-}
-
 
 
 
@@ -125,7 +94,7 @@ div.phone {
 
 
 .sidebar {
-  margin: 100px 0;
+  margin: 20px 0 0 20px;
 
 
 }
@@ -137,19 +106,10 @@ div.phone {
 
 
 
-
-
-
-
-/* убираем отступы и поля, а также list-style для "ul", 
-* и добавляем "position:relative" */
-
-
-
 .sidebar ul {
   padding: 0;
   margin: 0;
-
+  list-style-type: none;
   position: relative;
 }
 
@@ -263,7 +223,7 @@ div.phone {
   position: relative;
   background-color: rgb(212, 22, 22);
   color: #fff;
-  margin-top: 310px;
+  margin-top: 70px;
 }
 
 .info__icon {
@@ -499,4 +459,47 @@ div.phone {
   border: 1px solid black;
   width: 41px;
   height: 41px;
+}
+
+
+
+
+
+
+
+
+footer {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -800px;
+  width: 100%;
+  min-width: 300px;
+  font-size: 16px;
+  overflow: hidden;
+  color: rgb(85, 25, 35);
+}
+
+footer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6caca;
+  padding: 0;
+
+}
+
+div.phone {
+  background-color: rgb(201, 172, 172);
+  display: block;
+  text-align: center;
+}
+
+.menu ul li {
+  margin-right: 25px;
+}
+
+.phone a {
+  color: black;
+  font-size: 13px;
 }
