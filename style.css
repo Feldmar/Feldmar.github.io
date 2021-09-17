@@ -7,6 +7,7 @@ header {
 
 .name {
   text-shadow: 01px 1px 2px black;
+  padding-left: 25px;
 }
 
 body {
@@ -352,14 +353,14 @@ text-decoration: none;}
 /* =========================ПРОДУКТ=================================*/
 .btn {
   border: 1 px solid black;
-  background-color: gray;
+  background-color: rgba(189, 174, 91, 0.836);
   color: black;
-  padding: 10px 15px;
+  padding: 10px 10px;
   font-size: 14px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-width: 175px;
+  min-width: 165px;
 }
 
 .btn-darc {
@@ -387,7 +388,7 @@ text-decoration: none;}
 }
 
 .product_description {
-  width: 50%;
+  width: 40%;
   padding: 15px;
 }
 
@@ -426,7 +427,7 @@ text-decoration: none;}
 
 .product_description-cards div {
   border: 1px solid gray;
-  border-radius: ;
+  border-radius:4px 4px 4px 4px ;
   margin-right: 15px;
   padding: 5px;
   font-size: 14px;
@@ -434,12 +435,14 @@ text-decoration: none;}
 }
 
 .product_description-cards .visa {
-  color: aqua;
+  color: rgb(0, 4, 255);
+  background-color:#FFCF18;
 
 }
 
 .product_description-cards .master {
-  color: brown;
+  background-color:red ;
+  color: #FFCF18;
 }
 
 .product_description-cartBtn {
@@ -447,7 +450,19 @@ text-decoration: none;}
   display: flex;
 }
 
+.product__description-cartBtn .count {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
 
+.product__description-btn {
+  margin-top: 15px;
+}
+
+.product__description-cartBtn .count input {
+  max-width: 90px;
+}
 
 
 
@@ -481,11 +496,58 @@ text-decoration: none;}
   height: 41px;
 }
 
+/*=======================ЗВЁЗДЫ================*/
+.stars {
+	overflow: hidden;
+	width: 210px;
+	margin: 0 0 5px ;
+}
+.stars:not(:checked) > input {
+	display: none;
+}
+.stars:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.stars:not(:checked) > label:before {
+	content: '★';
+}
+.stars > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.stars > input:checked + label:hover,
+.stars > input:checked + label:hover ~ label,
+.stars > input:checked ~ label:hover,
+.stars > input:checked ~ label:hover ~ label,
+.stars > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.stars > label:active {
+	position: relative;
+  
+}
 
-
-
-
-
+.product_review{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-gap: 0px;
+}
+.product_review span{
+  margin-top: 5px;
+}
 
 /* =========================ФУТЕР=================================*/
 footer {
