@@ -279,7 +279,7 @@ header .top {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  
+
 }
 
 .card {
@@ -632,7 +632,7 @@ div.phone {
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  background-color: #ccca59;
+  background-color: #D8E6F3;
   border: 1px solid #e0e0e0;
   padding: 20px 18px;
   font-size: 16px;
@@ -648,7 +648,7 @@ div.phone {
 }
 
 .tabs>input[type="radio"]:checked+label {
-  background-color: rgb(226, 219, 120);
+  background-color: rgb(243, 243, 239);
   border-bottom: 1px solid #fff;
 }
 
@@ -657,39 +657,28 @@ div.phone {
 
 
 
-table {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-  font-size: 14px;
-  border-collapse: collapse;
-  text-align: center;
+
+
+
+.hr li {
+  list-style: none;
+  font-size: 13px;
 }
 
-th,
-td:first-child {
-  background: #dde7af;
-  color: rgb(44, 36, 36);
-  padding: 20px 20px;
+.hr {
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-th,
-td {
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: white;
+.hr ul {
+  padding: 0px 50px 0px 50px;
 }
 
-td {
-  background: #D8E6F3;
-}
-
-th:first-child,
-td:first-child {
-  text-align: left;
-}
-
-.tabs {
-  display: block;
-  justify-content:
+.hr span {
+  color: gray
 }
 
 
@@ -698,13 +687,14 @@ td:first-child {
 
 
 
-.layout {
-  width: 1200px; /* Ширина таблицы */
-  margin: auto;vertical-align: top; /* Выравнивание по верхнему краю ячейки */
-  padding: 5px; 
-  border: 1px solid rgb(64, 71, 64)
- }
- 
- .col1 { width: 150px; }
- .col2 { width: 600px; }
- .col3 { width: 200px; }
+
+
+
+.map iframe {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin:0px auto;
+
+}
