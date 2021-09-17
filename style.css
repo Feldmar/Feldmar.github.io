@@ -691,3 +691,20 @@ td:first-child {
   display: block;
   justify-content:
 }
+
+
+
+
+
+
+
+.layout {
+  width: 1200px; /* Ширина таблицы */
+  margin: auto;vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+  padding: 5px; 
+  border: 1px solid rgb(64, 71, 64)
+ }
+ 
+ .col1 { width: 150px; }
+ .col2 { width: 600px; }
+ .col3 { width: 200px; }
