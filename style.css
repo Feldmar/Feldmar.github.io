@@ -44,10 +44,12 @@ header .top {
   align-items: center;
   background-color: #b9aaaa;
   padding: 10px;
-  
+
 }
-.top a{
-text-decoration: none;}
+
+.top a {
+  text-decoration: none;
+}
 
 
 .info_tel {
@@ -60,6 +62,7 @@ text-decoration: none;}
 .container1 {
   margin: 2px 0 0px 0px;
 }
+
 .info_tel a {
   text-decoration: none;
   color: black;
@@ -221,7 +224,6 @@ text-decoration: none;}
 
 
 
-
 /* =========================БЛОКИ С ИНФОРМАЦИЕЙ СЛЕВА=================================*/
 
 .info {
@@ -277,6 +279,7 @@ text-decoration: none;}
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  
 }
 
 .card {
@@ -427,7 +430,7 @@ text-decoration: none;}
 
 .product_description-cards div {
   border: 1px solid gray;
-  border-radius:4px 4px 4px 4px ;
+  border-radius: 4px 4px 4px 4px;
   margin-right: 15px;
   padding: 5px;
   font-size: 14px;
@@ -436,12 +439,12 @@ text-decoration: none;}
 
 .product_description-cards .visa {
   color: rgb(0, 4, 255);
-  background-color:#FFCF18;
+  background-color: #FFCF18;
 
 }
 
 .product_description-cards .master {
-  background-color:red ;
+  background-color: red;
   color: #FFCF18;
 }
 
@@ -498,54 +501,62 @@ text-decoration: none;}
 
 /*=======================ЗВЁЗДЫ================*/
 .stars {
-	overflow: hidden;
-	width: 210px;
-	margin: 0 0 5px ;
-}
-.stars:not(:checked) > input {
-	display: none;
-}
-.stars:not(:checked) > label {
-	float: right;
-	width: 42px;
-	padding: 0;
-	cursor: pointer;
-	font-size: 32px;
-	line-height: 32px;
-	color: lightgrey;
-	text-shadow: 1px 1px #bbb;
-}
-.stars:not(:checked) > label:before {
-	content: '★';
-}
-.stars > input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px #c60;
-}
-.stars:not(:checked) > label:hover,
-.stars:not(:checked) > label:hover ~ label {
-	color: gold;
-}
-.stars > input:checked + label:hover,
-.stars > input:checked + label:hover ~ label,
-.stars > input:checked ~ label:hover,
-.stars > input:checked ~ label:hover ~ label,
-.stars > label:hover ~ input:checked ~ label {
-	color: gold;
-	text-shadow: 1px 1px goldenrod;
-}
-.stars > label:active {
-	position: relative;
-  
+  overflow: hidden;
+  width: 210px;
+  margin: 0 0 5px;
 }
 
-.product_review{
+.stars:not(:checked)>input {
+  display: none;
+}
+
+.stars:not(:checked)>label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.stars:not(:checked)>label:before {
+  content: '★';
+}
+
+.stars>input:checked~label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.stars:not(:checked)>label:hover,
+.stars:not(:checked)>label:hover~label {
+  color: gold;
+}
+
+.stars>input:checked+label:hover,
+.stars>input:checked+label:hover~label,
+.stars>input:checked~label:hover,
+.stars>input:checked~label:hover~label,
+.stars>label:hover~input:checked~label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.stars>label:active {
+  position: relative;
+
+}
+
+.product_review {
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr;
   grid-column-gap: 0px;
   grid-gap: 0px;
 }
-.product_review span{
+
+.product_review span {
   margin-top: 5px;
 }
 
@@ -584,4 +595,99 @@ div.phone {
 .phone a {
   color: black;
   font-size: 13px;
+}
+
+
+
+
+
+/*============ТАБЛИЦА==================*/
+.tabs {
+  font-size: 0;
+  max-width: 387px;
+  float: inline-start;
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 1px solid #e0e0e0;
+  padding: 15px 15px;
+  font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #ccca59;
+  border: 1px solid #e0e0e0;
+  padding: 20px 18px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+.tabs>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+  background-color: rgb(226, 219, 120);
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td:first-child {
+  background: #dde7af;
+  color: rgb(44, 36, 36);
+  padding: 20px 20px;
+}
+
+th,
+td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+
+td {
+  background: #D8E6F3;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+.tabs {
+  display: block;
+  justify-content:
 }

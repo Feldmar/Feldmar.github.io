@@ -8,6 +8,7 @@
   <title>IPhone 6s 128Gb Gold</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
+
 </head>
 
 <body>
@@ -157,7 +158,6 @@
               <span>Наличие: Есть в наличии</span>
             </div>
             <div class="product_description-prise">64999 руб</div>
-
             <div class="product_description-sail">
               <span>64999 руб. </span>
               <span>При оплате по картам:</span>
@@ -172,8 +172,6 @@
               <div class="count">
                 <span> количество</span>
                 <input type="number" name="count" value="1">
-
-
               </div>
             </div>
             <div class="product_description-btn">
@@ -208,11 +206,14 @@
           </div>
           <span>0 отзывов/Написать отзыв</span>
         </div>
-        <div class="product_rewiew-btn">
-          <div class="btn"><span>Характер</span></div>
-          <div class="btn btn-white"><span>Описание</span></div>
-          <div class="btn btn-white"><span>Отзыв</span></div>
-          <div class="product_review-content">
+        <div class="tabs">
+          <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+          <label for="tab-btn-1">Характеристики</label>
+          <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+          <label for="tab-btn-2">Описание</label>
+          <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+          <label for="tab-btn-3">Отзывы (0)</label>
+          <div id="content-1">
             <div class="tab-item active">
               <table>
                 <thead>
@@ -224,7 +225,7 @@
                 <tbody>
                   <tr>
                     <th>Гарантия</th>
-                    <th>1 год</th>
+                    <th>1 год от официального сервис центра Apple</th>
                   </tr>
                   <tr>
                     <th>Память</th>
@@ -237,19 +238,77 @@
                 </tbody>
               </table>
             </div>
-
           </div>
+          <div id="content-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolore sunt consequatur sed, corporis totam
+            rerum minima odit voluptate illo fugiat dicta! Rem ipsum eaque cupiditate nostrum illo praesentium explicabo
+            obcaecati voluptatem quos.
+          </div>
+          <div id="content-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur blanditiis eligendi nulla quasi, modi
+            sunt neque facere. Corporis error architecto quibusdam reiciendis magnam.
+          </div> </section>
+        
+  
+ 
+
+
+  <h2 class="main__right-title">
+    Рекомендуем
+  </h2>
+
+  <section class="card-list">
+    
+    <div class="card">
+      <div class="card__img"></div>
+      <div class="card__title">
+        Lorem, ipsum dolor.
+      </div>
+      <div class="card__prise">
+        Lorem, ipsum.
+      </div>
+      <div class="card__btn">
+        <div>
+          <span>Добавить в корзину</span>
         </div>
-      </section>
-
-
-
-    </div>
+        <div>
+          <span>Купить в 1 клик</span>
+        </div>
+      </div>
+    </div><!-- card end-->
+    <div class="card">
+      <div class="card__img"></div>
+      <div class="card__title">
+        Lorem, ipsum dolor.
+      </div>
+      <div class="card__prise">
+        Lorem, ipsum.
+      </div>
+      <div class="card__btn">
+        <div>Добавить в корзину</div>
+        <div>Купить в 1 клик</div>
+      </div>
+    </div><!-- card end-->
+    <div class="card">
+      <div class="card__img"></div>
+      <div class="card__title">
+        Lorem, ipsum dolor.
+      </div>
+      <div class="card__prise">
+        Lorem, ipsum.
+      </div>
+      <div class="card__btn">
+        <div>Добавить в корзину</div>
+        <div>Купить в 1 клик</div>
+      </div>
+    </div><!-- card end-->
+  </section><!-- card-list -->
+  
 
   </div>
 
+</div> 
 
-  </main>
 
 
 
