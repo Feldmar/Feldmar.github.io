@@ -688,13 +688,46 @@ div.phone {
 
 
 
-
+/* =========================КАРТА===============*/
 
 .map iframe {
   display: flex;
   justify-content: center;
-  width: 400px;
-  height: 400px;
-  margin:0px auto;
+  width: 800px;
+  height: 600px;
+  margin:40px auto;
 
+}
+
+
+
+/* =========================ФОРМА===============*/
+.cover input {
+  
+  width:1000px; 
+  height: 40px;
+  margin-left:150px; 
+  
+}
+
+#name{
+
+}
+
+
+
+
+.cover{
+  
+  padding: 10px;
+  
+  float: left;
+  
+}
+
+#submit{
+  max-width: 200px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 200px;
 }
