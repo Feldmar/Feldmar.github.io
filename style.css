@@ -54,22 +54,6 @@ header .top {
 }
 
 
-.info_tel {
-  display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
-}
-
-.container1 {
-  margin: 2px 0 0px 0px;
-}
-
-.info_tel a {
-  text-decoration: none;
-  color: #DAA520;
-  font-size: 15px;
-}
 
 
 
@@ -834,4 +818,104 @@ color:#9DA1AA;
   margin-left: 20px;
   
 
+}
+
+
+
+
+
+
+
+
+
+.container1 , .container2 , .container3{
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.info_tel ul li {
+  position: relative;
+}
+
+
+
+
+.info_tel ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+
+/* применяем inline-block позиционирование к элементам навигации */
+.info_tel ul li {
+  
+  display: block;
+
+
+}
+
+/* стилизуем ссылки */
+.info_tel a {
+  display: block;
+  padding: 5px 5px;
+  color: rgb(94, 37, 37);
+  font-size: 15px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+.info_tel a:hover {
+  background-color: #5e585e;
+}
+
+.info_tel ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  font-size: 15px;
+}
+
+/* отображаем выпадающий список при наведении */
+.info_tel ul li:hover>ul {
+  display: inline;
+  background-color: rgb(83, 78, 78);
+  z-index: 0;
+}
+
+/* первый уровень выпадающего списка */
+.info_tel ul ul li {
+  max-width: 203px;
+  min-width: 203px;
+  min-height: 50px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+
+
+
+
+.info_tel a {
+  text-decoration: none;
+  color: #DAA520;
+  
+  margin-right: 25px;
+}
+.container1, .container2, .container3{
+  display: inline;
 }
