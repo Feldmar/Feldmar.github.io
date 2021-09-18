@@ -145,7 +145,7 @@ header .top {
 .sidebar a {
   display: block;
   padding: 5px 5px;
-  color: #DAA520;
+  color: #53514b;
   font-size: 15px;
   line-height: 40px;
   text-decoration: none;
@@ -357,9 +357,9 @@ header .top {
 
 /* =========================ПРОДУКТ=================================*/
 .btn {
-  border: 1 px solid black;
+  border: 1px solid black;
   background-color: rgba(189, 174, 91, 0.836);
-  color: black;
+  color: #9DA1AA;
   padding: 10px 10px;
   font-size: 14px;
   display: inline-flex;
@@ -607,6 +607,7 @@ div.phone {
 .tabs {
   font-size: 0;
   max-width: 387px;
+  min-height: 400px;
   float: inline-start;
 }
 
@@ -721,6 +722,7 @@ h3.contact {
 
 
 .cover {
+  color:#9DA1AA;
 
   padding: 10px;
 
@@ -776,7 +778,7 @@ h3.contact {
 
 /* изменяем цвет фона при наведении курсора */
 .sorting a:hover {
-  background-color: #be71c5;
+  background-color: #8d8a8d;
 }
 
 .sorting ul ul {
@@ -825,6 +827,11 @@ h3.contact {
   height: 4em;
   top: 19%;
   /* если значение height фиксированное, то следует расположить верхний край блока по середине высоты родителя */
+color:#9DA1AA;
 
+}
+.conttext{
+  margin-left: 20px;
+  
 
 }
