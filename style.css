@@ -693,10 +693,10 @@ div.phone {
 .map iframe {
   display: flex;
   justify-content: center;
-  width: 800px;
-  height: 600px;
+  width: 1200px;
+  height: 700px;
   margin:40px auto;
-
+ 
 }
 
 
