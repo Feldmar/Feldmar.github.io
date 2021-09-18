@@ -734,3 +734,79 @@ h3.contact{
   float: right;
   margin-right: 200px;
 }
+
+
+
+/* =========================КНОПКА СОРТИРОВКИ===============*/
+
+
+
+.sorting ul li {
+  position: relative;
+}
+
+
+
+
+.sorting ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+
+/* применяем inline-block позиционирование к элементам навигации */
+.sorting ul li {
+  margin: 0px 0 0 0;
+  display: block;
+
+
+}
+
+/* стилизуем ссылки */
+.sorting a {
+  display: block;
+  padding: 5px 5px;
+  color: rgb(94, 37, 37);
+  font-size: 15px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+.sorting a:hover {
+  background-color: #be71c5;
+}
+
+.sorting ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+
+}
+
+/* отображаем выпадающий список при наведении */
+.sorting ul li:hover>ul {
+  display: inherit;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* первый уровень выпадающего списка */
+.sorting ul ul li {
+  max-width: 120px;
+  min-width: 120px;
+  min-height: 50px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+.sorting {
+  margin-right: 25px;
+  display:flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid gray;
+
+
+}
