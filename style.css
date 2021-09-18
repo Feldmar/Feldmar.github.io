@@ -9,7 +9,6 @@ header {
   color: black;
   text-shadow: 01px 1px 2px hsla(0, 0%, 100%, 0.925);
   padding-left: 25px;
-
 }
 
 body {
@@ -98,8 +97,6 @@ header .top {
 
 .sidebar {
   margin: 20px 0 0 20px;
-
-
 }
 
 .sidebar ul li {
@@ -121,8 +118,6 @@ header .top {
 .sidebar ul li {
   margin: 0px 0 0 0;
   display: block;
-
-
 }
 
 /* стилизуем ссылки */
@@ -144,7 +139,6 @@ header .top {
   display: none;
   position: absolute;
   top: 100%;
-
 }
 
 /* отображаем выпадающий список при наведении */
@@ -193,11 +187,9 @@ header .top {
 }
 
 .main__right {
-
   width: 70%;
   padding-top: 15px;
   clear: right;
-
 }
 
 .main__right-title {
@@ -426,7 +418,6 @@ header .top {
 .product_description-cards .visa {
   color: rgb(0, 4, 255);
   background-color: #FFCF18;
-
 }
 
 .product_description-cards .master {
@@ -461,7 +452,6 @@ header .top {
 
 .product_slider {
   width: 50%;
-
 }
 
 .product_slider-preview {
@@ -476,7 +466,6 @@ header .top {
   justify-content: space-between;
   overflow-x: auto;
   width: 100%;
-
 }
 
 .slider-item {
@@ -532,7 +521,6 @@ header .top {
 
 .stars>label:active {
   position: relative;
-
 }
 
 .product_review {
@@ -565,7 +553,6 @@ footer .menu {
   align-items: center;
   background-color: #778899;
   padding: 0;
-
 }
 
 div.phone {
@@ -683,35 +670,28 @@ div.phone {
   width: 1200px;
   height: 700px;
   margin: 40px auto;
-
 }
 
 
 
 /* =========================ФОРМА===============*/
 .cover input {
-
   width: 1000px;
   height: 40px;
   margin-left: 150px;
-
 }
 
 #name {}
 
 h3.contact {
-
   border-bottom: 1px solid gray;
 }
 
 
 .cover {
-  color:#9DA1AA;
-
+  color: #9DA1AA;
   padding: 10px;
-
   float: left;
-
 }
 
 #submit {
@@ -746,8 +726,6 @@ h3.contact {
 .sorting ul li {
   margin: 0px 0 0 0;
   display: block;
-
-
 }
 
 /* стилизуем ссылки */
@@ -769,7 +747,6 @@ h3.contact {
   display: none;
   position: absolute;
   top: 100%;
-
 }
 
 /* отображаем выпадающий список при наведении */
@@ -794,8 +771,6 @@ h3.contact {
   display: flex;
   justify-content: flex-end;
   border-bottom: 1px solid gray;
-
-
 }
 
 
@@ -811,32 +786,15 @@ h3.contact {
   height: 4em;
   top: 19%;
   /* если значение height фиксированное, то следует расположить верхний край блока по середине высоты родителя */
-color:#9DA1AA;
-
+  color: #9DA1AA;
 }
-.conttext{
+
+.conttext {
   margin-left: 20px;
-  
-
 }
 
 
 
-
-
-
-
-
-
-.container1 , .container2 , .container3{
-
-
-
-
-
-
-
-}
 
 
 
@@ -861,10 +819,7 @@ color:#9DA1AA;
 
 /* применяем inline-block позиционирование к элементам навигации */
 .info_tel ul li {
-  
   display: block;
-
-
 }
 
 /* стилизуем ссылки */
@@ -913,9 +868,11 @@ color:#9DA1AA;
 .info_tel a {
   text-decoration: none;
   color: #DAA520;
-  
   margin-right: 25px;
 }
-.container1, .container2, .container3{
+
+.container1,
+.container2,
+.container3 {
   display: inline;
 }
