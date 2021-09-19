@@ -580,6 +580,7 @@ div.phone {
   max-width: 387px;
   min-height: 400px;
   float: inline-start;
+  border-style: 1px solid gray;
 }
 
 .tabs>input[type="radio"] {
@@ -589,7 +590,7 @@ div.phone {
 .tabs>div {
   /* скрыть контент по умолчанию */
   display: none;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #1a1919;
   padding: 15px 15px;
   font-size: 16px;
 }
@@ -607,7 +608,7 @@ div.phone {
   vertical-align: middle;
   user-select: none;
   background-color: #D8E6F3;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #0f0e0e;
   padding: 20px 18px;
   font-size: 16px;
   line-height: 1.5;
@@ -623,10 +624,19 @@ div.phone {
 
 .tabs>input[type="radio"]:checked+label {
   background-color: rgb(243, 243, 239);
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgb(24, 23, 23);
 }
 
+.tabs td {
+  
+  border: 1px solid black;
+  min-width: 200px;
+}
 
+.tabs th {
+  padding: 5px 34px;
+  border: 1px solid black;
+}
 
 
 
