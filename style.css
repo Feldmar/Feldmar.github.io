@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Play&family=Titillium+Web:wght@300&display=swap');
 
+
+:root {
+  --textcolor: #777777;
+  --border-color: #ffffff;
+  --border-color-for-info-icon: #921ad3;
+  --info-icon-color-red:#f53737;
+  --info-icon-color-orange:#ff9320;
+  --info-icon-color-blue:#0079ff;
+}
+
+
+
 header {
   width: 100%;
   color: #DAA520;
@@ -17,6 +29,7 @@ body {
   min-width: 300px;
   font-size: 17px;
   font-family: 'Play', sans-serif;
+
 }
 
 
@@ -209,13 +222,16 @@ header .top {
   margin: 30px;
   display: flex;
   padding: 15px;
-  border: 1px solid black;
+  border: 3px solid #f7f7f7;
+  max-width: 255px;
+  max-height: 145px;
+  color: var(--textcolor);
 }
 
 .info.active {
   display: flex;
   position: relative;
-  background-color: rgb(194, 192, 192);
+  background-color: var(--border-color-for-info-icon);
   color: #fff;
   margin-top: 70px;
 }
@@ -237,7 +253,16 @@ header .top {
   font-weight: 150;
 }
 
+.red{
+  color:var(--info-icon-color-red);
+}
 
+.orange{
+  color:var(--info-icon-color-orange);
+}
+.blue{
+  color:var(--info-icon-color-blue);
+}
 
 
 
@@ -691,7 +716,7 @@ div.phone {
   margin-left: 150px;
 }
 
-#name {}
+
 
 h3.contact {
   border-bottom: 1px solid gray;
