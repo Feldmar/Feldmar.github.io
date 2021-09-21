@@ -844,7 +844,7 @@ h3.contact {
 
 /* изменяем цвет фона при наведении курсора */
 .info_tel a:hover {
-  background-color: #5e585e;
+  background-color:gray;
 }
 
 .info_tel ul ul {
@@ -857,7 +857,7 @@ h3.contact {
 /* отображаем выпадающий список при наведении */
 .info_tel ul li:hover>ul {
   display: inline;
-  background-color: rgb(83, 78, 78);
+  background-color:#17ac1a;
   z-index: 0;
 }
 
