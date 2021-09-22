@@ -4,10 +4,11 @@
 :root {
   --textcolor: #777777;
   --border-color: #ffffff;
+  --textcolorinfoactive: #ffffff;
   --border-color-for-info-icon: #921ad3;
-  --info-icon-color-red:#f53737;
-  --info-icon-color-orange:#ff9320;
-  --info-icon-color-blue:#0079ff;
+  --info-icon-color-red: #f53737;
+  --info-icon-color-orange: #ff9320;
+  --info-icon-color-blue: #0079ff;
 }
 
 
@@ -225,16 +226,10 @@ header .top {
   border: 3px solid #f7f7f7;
   max-width: 255px;
   max-height: 145px;
-  color: var(--textcolor);
+
 }
 
-.info.active {
-  display: flex;
-  position: relative;
-  background-color: var(--border-color-for-info-icon);
-  color: #fff;
-  margin-top: 70px;
-}
+
 
 .info__icon {
   width: 20%;
@@ -249,21 +244,35 @@ header .top {
   font-weight: 150;
 }
 
-.info__text-description {
-  font-weight: 150;
-}
+
 
 .red{
-  color:var(--info-icon-color-red);
+  color: var(--info-icon-color-red);
+
 }
 
-.orange{
-  color:var(--info-icon-color-orange);
-}
-.blue{
-  color:var(--info-icon-color-blue);
+.orange {
+  color: var(--info-icon-color-orange);
 }
 
+.blue {
+  color: var(--info-icon-color-blue);
+}
+
+.info__text-description {
+  font-weight: 150;
+  color: var(--textcolor);
+}
+
+.info.active{
+  display: flex;
+  position: relative;
+  background-color: var(--border-color-for-info-icon);
+  margin-top: 70px;
+}
+.active,.active .info__text-description {
+  color: var(--textcolorinfoactive);
+}
 
 
 
