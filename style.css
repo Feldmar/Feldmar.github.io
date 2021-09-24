@@ -13,22 +13,13 @@
 
 
 
-header {
-  width: 100%;
-  color: #DAA520;
-}
 
-.name {
-  color: black;
-  text-shadow: 01px 1px 2px hsla(0, 0%, 100%, 0.925);
-  padding-left: 25px;
-}
 
 body {
   height: 100%;
   width: 100%;
   min-width: 300px;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Play', sans-serif;
 
 }
@@ -40,25 +31,27 @@ body {
 
 
 /* =========================ХЭДЕР=================================*/
-.header a {
-  color: rgb(165, 112, 42);
+header {
+  width: 100%;
+  max-height: 50px;
+  color:#999999;
+  background-color: #333333;
+
+  
+
 }
 
-.header a:hover {
-  color: rgb(255, 230, 0);
-  transform: scale;
-}
-
-.menu ul {
-  display: flex;
+.name a{
+  color: rgb(255, 255, 255);
+  margin-left: 215px;
+  padding:15px;
 }
 
 header .top {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
-  background-color: #778899;
-  padding: 10px;
+  
 
 }
 
@@ -66,10 +59,23 @@ header .top {
   text-decoration: none;
 }
 
+div.phone a{
+  color:#fff;
+  padding-left: 15px;
+  border-left:1px solid #999999;
+}
 
-
-
-
+.header__top-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 215px;
+  padding:15px;
+}
+.accaunt{
+  padding-right: 15px;
+  
+}
 
 
 
@@ -82,7 +88,7 @@ header .top {
 }
 
 .menu ul li a:hover {
-  color: rgb(197, 142, 69);
+  color: rgb(73, 72, 70);
   transform: scale(1.1);
 }
 
@@ -588,12 +594,6 @@ footer .menu {
   align-items: center;
   background-color: #778899;
   padding: 0;
-}
-
-div.phone {
-  background-color: #708090;
-  display: block;
-  text-align: center;
 }
 
 .menu ul li {
