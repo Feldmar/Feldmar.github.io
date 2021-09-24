@@ -46,7 +46,9 @@ header {
   margin-left: 215px;
   padding: 15px;
 }
-
+.name i{
+  padding-right: 5px;
+}
 header .top {
   display: flex;
   justify-content: space-around;
@@ -68,7 +70,7 @@ div.phone a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 215px;
+  margin-right: 205px;
 
 
 }
@@ -79,7 +81,7 @@ div.phone a {
 }
 
 .top input {
-  width: 520px;
+  width: 510px;
   height: 30px;
   background-color: #444444;
 }
@@ -93,10 +95,10 @@ div.phone a {
   display: flex;
   align-items: flex-end;
   background-color: #17ac1a;
-  padding: 15px;
+  padding: 10px;
   color: #fff;
-  min-width: 310px;
-  margin-right: 220px;
+  min-width: 305px;
+  margin-right: 210px;
 }
 
 .header__cart i {
@@ -141,7 +143,9 @@ footer {
   color: #999999;
 
 }
-
+.menu_bottom i{
+  padding-right:5px;
+}
 .phone_1 {
   height: 50px;
   color: #999999;
