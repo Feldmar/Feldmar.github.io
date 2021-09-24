@@ -20,6 +20,8 @@ body {
   width: 100%;
   font-size: 15px;
   font-family: 'Play', sans-serif;
+  overflow-x: hidden;
+  ;
 }
 
 
@@ -34,6 +36,9 @@ header {
   max-height: 50px;
   color: #999999;
   background-color: #333333;
+
+
+  
 }
 
 .name a {
@@ -45,7 +50,8 @@ header {
 header .top {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items:center;
+  padding: 10px;
 }
 
 .top a {
@@ -63,7 +69,8 @@ div.phone a {
   justify-content: space-around;
   align-items: center;
   margin-right: 215px;
-  padding: 15px;
+ 
+  
 }
 
 .accaunt {
@@ -72,7 +79,7 @@ div.phone a {
 }
 
 .top input {
-  width: 530px;
+  width: 520px;
   height: 30px;
   background-color: #444444;
 }
@@ -101,26 +108,81 @@ div.phone a {
   margin-right: 5px;
 }
 
+/* =========================ФУТЕР=================================*/
+footer {
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 58px;
+
+
+}
+
+.menu_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #778899;
+  padding: 0;
+
+}
+
+.menu_bottom ul li {
+
+  display: inline;
+}
+
+.menu_bottom ul li a {
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.phone_1{
+  height: 50px;
+  color: #999999;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color:#262626;
+}
+.phone_1 a{
+   font-size: 13px;
+   text-decoration: none;
+   color: #999999;
+}
+.phone_1{
+  font-size: 15px;
+}
+
+
+
+body {
+  position: relative;
+  padding-bottom: 58px;
+  box-sizing: border-box;
+}
+
 /* =========================ПАНЕЛЬ НАВИГАЦИИ=================================*/
 
-.menu {
+.menu_top {
   margin-left: 175px;
   padding-left: 15px;
   margin-bottom: 35px;
 }
 
-.menu ul li a {
+.menu_top ul li a {
   color: rgb(104, 102, 99);
   display: block;
   text-decoration: none;
   transition: 0.3s ease-in all;
 }
 
-.menu ul li a:hover {
+.menu_top ul li a:hover {
   border-bottom: 1px dashed gray;
 }
 
-.menu ul {
+.menu_top ul {
   display: flex;
   list-style: none;
 }
@@ -194,7 +256,7 @@ aside {
 /* отображаем выпадающий список при наведении */
 .sidebar ul li:hover>ul {
   display: inherit;
-  background-color:#f8f8f8;
+  background-color: #f8f8f8;
   z-index: 10;
 }
 
@@ -229,18 +291,19 @@ aside {
   width: 100%;
   margin-left: 215px;
   padding: 15px;
+  margin-right: 215px;
 }
 
 .main__left {
   display: block;
-  width: 25%;
-  clear: right;
+  width: 30%;
+
 }
 
 .main__right {
   width: 70%;
   padding-top: 15px;
-  clear: right;
+
 }
 
 .main__right-title {
@@ -317,10 +380,10 @@ aside {
 
 /* =========================СЛАЙДЕР=================================*/
 .slider {
-  border: 1px solid rgb(153, 37, 37);
-  max-width: 800px;
+  border: 1px solid#f8f8f8;
+  max-width: 750px;
   min-height: 400px;
-  margin-top: 90px;
+  margin-top: 40px;
   margin-left: 25px;
 }
 
@@ -610,35 +673,7 @@ aside {
   margin-top: 5px;
 }
 
-/* =========================ФУТЕР=================================*/
-footer {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -900px;
-  width: 100%;
-  min-width: 300px;
-  font-size: 16px;
-  overflow: hidden;
-  color: #DAA520;
-}
 
-footer .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #778899;
-  padding: 0;
-}
-
-.menu ul li {
-  margin-right: 25px;
-}
-
-.phone a {
-  color: #DAA520;
-  font-size: 13px;
-}
 
 
 
@@ -882,77 +917,3 @@ h3.contact {
 
 
 
-.info_tel ul li {
-  position: relative;
-}
-
-
-
-
-.info_tel ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  position: relative;
-}
-
-
-/* применяем inline-block позиционирование к элементам навигации */
-.info_tel ul li {
-  display: block;
-}
-
-/* стилизуем ссылки */
-.info_tel a {
-  display: block;
-  padding: 5px 5px;
-  color: rgb(94, 37, 37);
-  font-size: 15px;
-  line-height: 40px;
-  text-decoration: none;
-}
-
-/* изменяем цвет фона при наведении курсора */
-.info_tel a:hover {
-  background-color: #5e585e;
-}
-
-.info_tel ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  font-size: 15px;
-}
-
-/* отображаем выпадающий список при наведении */
-.info_tel ul li:hover>ul {
-  display: inline;
-  background-color: rgb(83, 78, 78);
-  z-index: 0;
-}
-
-/* первый уровень выпадающего списка */
-.info_tel ul ul li {
-  max-width: 203px;
-  min-width: 203px;
-  min-height: 50px;
-  float: none;
-  display: list-item;
-  position: relative;
-}
-
-
-
-
-
-.info_tel a {
-  text-decoration: none;
-  color: #DAA520;
-  margin-right: 25px;
-}
-
-.container1,
-.container2,
-.container3 {
-  display: inline;
-}
