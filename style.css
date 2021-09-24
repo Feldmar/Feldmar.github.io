@@ -18,10 +18,8 @@
 body {
   height: 100%;
   width: 100%;
-  min-width: 300px;
   font-size: 15px;
   font-family: 'Play', sans-serif;
-
 }
 
 
@@ -34,52 +32,83 @@ body {
 header {
   width: 100%;
   max-height: 50px;
-  color:#999999;
+  color: #999999;
   background-color: #333333;
-
-  
-
 }
 
-.name a{
+.name a {
   color: rgb(255, 255, 255);
   margin-left: 215px;
-  padding:15px;
+  padding: 15px;
 }
 
 header .top {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-  
-
 }
 
 .top a {
   text-decoration: none;
 }
 
-div.phone a{
-  color:#fff;
+div.phone a {
+  color: #fff;
   padding-left: 15px;
-  border-left:1px solid #999999;
+  border-left: 1px solid #999999;
 }
 
-.header__top-info{
+.header__top-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-right: 215px;
-  padding:15px;
+  padding: 15px;
 }
-.accaunt{
+
+.accaunt {
   padding-right: 15px;
-  
+
 }
 
+.top input {
+  width: 530px;
+  height: 30px;
+  background-color: #444444;
+}
 
+.accaunt i {
+  padding-right: 10px;
+}
+
+.header__cart {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  background-color: #17ac1a;
+  padding: 15px;
+  color: #fff;
+  min-width: 310px;
+  margin-right: 220px;
+}
+
+.header__cart i {
+  font-style: normal;
+  margin-right: 10px;
+}
+
+.header__cart #count_cart {
+  margin-right: 5px;
+}
 
 /* =========================ПАНЕЛЬ НАВИГАЦИИ=================================*/
+
+.menu {
+  margin-left: 175px;
+  padding-left: 15px;
+  margin-bottom: 35px;
+}
+
 .menu ul li a {
   color: rgb(104, 102, 99);
   display: block;
@@ -88,8 +117,7 @@ div.phone a{
 }
 
 .menu ul li a:hover {
-  color: rgb(73, 72, 70);
-  transform: scale(1.1);
+  border-bottom: 1px dashed gray;
 }
 
 .menu ul {
@@ -115,8 +143,10 @@ div.phone a{
 /* =========================САЙДБАР=================================*/
 
 
-.sidebar {
-  margin: 20px 0 0 20px;
+aside {
+  margin-top: 50px;
+  padding-top: 15px;
+  border: 2px solid gray;
 }
 
 .sidebar ul li {
@@ -136,7 +166,6 @@ div.phone a{
 
 /* применяем inline-block позиционирование к элементам навигации */
 .sidebar ul li {
-  margin: 0px 0 0 0;
   display: block;
 }
 
@@ -145,14 +174,15 @@ div.phone a{
   display: block;
   padding: 5px 5px;
   color: #53514b;
-  font-size: 15px;
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 20px;
   text-decoration: none;
 }
 
 /* изменяем цвет фона при наведении курсора */
 .sidebar a:hover {
   background-color: #a09f9c;
+  width: 150px;
 }
 
 .sidebar ul ul {
@@ -170,8 +200,8 @@ div.phone a{
 
 /* первый уровень выпадающего списка */
 .sidebar ul ul li {
-  min-width: 300px;
-  min-height: 50px;
+  min-width: 120px;
+  min-height: 30px;
   float: none;
   display: list-item;
   position: relative;
@@ -197,12 +227,13 @@ div.phone a{
 .main {
   display: flex;
   width: 100%;
+  margin-left: 215px;
+  padding: 15px;
 }
 
 .main__left {
   display: block;
   width: 25%;
-  padding: 15px;
   clear: right;
 }
 
@@ -252,7 +283,7 @@ div.phone a{
 
 
 
-.red{
+.red {
   color: var(--info-icon-color-red);
 
 }
@@ -270,13 +301,15 @@ div.phone a{
   color: var(--textcolor);
 }
 
-.info.active{
+.info.active {
   display: flex;
   position: relative;
   background-color: var(--border-color-for-info-icon);
   margin-top: 70px;
 }
-.active,.active .info__text-description {
+
+.active,
+.active .info__text-description {
   color: var(--textcolorinfoactive);
 }
 
@@ -285,8 +318,10 @@ div.phone a{
 /* =========================СЛАЙДЕР=================================*/
 .slider {
   border: 1px solid rgb(153, 37, 37);
-  min-height: 200px;
-  margin-right: 25px;
+  max-width: 800px;
+  min-height: 400px;
+  margin-top: 90px;
+  margin-left: 25px;
 }
 
 
