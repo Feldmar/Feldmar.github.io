@@ -21,7 +21,6 @@ body {
   font-size: 15px;
   font-family: 'Play', sans-serif;
   overflow-x: hidden;
-  ;
 }
 
 
@@ -43,7 +42,7 @@ header {
 
 .name a {
   color: rgb(255, 255, 255);
-  margin-left: 215px;
+  margin-left: 150px;
   padding: 15px;
 }
 .name i{
@@ -70,7 +69,7 @@ div.phone a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 205px;
+  margin-right: 150px;
 
 
 }
@@ -98,7 +97,7 @@ div.phone a {
   padding: 10px;
   color: #fff;
   min-width: 305px;
-  margin-right: 210px;
+  margin-right: 150px;
 }
 
 .header__cart i {
@@ -126,7 +125,7 @@ footer {
   align-items: center;
   background-color: #333333;
   padding: 0;
-  padding-left: 185px;
+  padding-left: 150px;
   padding-right: 185px;
 }
 
@@ -176,7 +175,7 @@ body {
 /* =========================ПАНЕЛЬ НАВИГАЦИИ=================================*/
 
 .menu_top {
-  margin-left: 185px;
+  margin-left: 135px;
   padding-left: 15px;
   margin-bottom: 35px;
 }
@@ -301,7 +300,7 @@ aside {
 .main {
   display: flex;
   width: 100%;
-  margin-left: 215px;
+  margin-left: 170px;
   padding: 15px;
   margin-right: 215px;
 }
@@ -315,7 +314,8 @@ aside {
 .main__right {
   width: 70%;
   padding-top: 15px;
-
+  padding: 5px;
+  margin-right: 150px;
 }
 
 .main__right-title {
@@ -406,25 +406,25 @@ aside {
 
 .card-list {
   display: flex;
-  justify-content: space-between;
   padding: 15px;
-
+  justify-content: space-evenly;
 }
 
 .card {
-  border: 2px solid rgb(168, 89, 24);
-  padding: 15px;
-  padding-bottom: 85px;
+  border: 2px solid#f5f1f3;
+  padding: 5px;
+  padding-bottom: 70px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-right: 25px;
+  
 }
 
 .card__img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 248px;
   background-color: rgb(114, 112, 112);
   position: relative;
 }
@@ -440,12 +440,12 @@ aside {
 }
 
 .card__title {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
 }
 
 .card__prise {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -453,7 +453,7 @@ aside {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 80px;
+  height: 70px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -468,12 +468,12 @@ aside {
 }
 
 .card__btn div:nth-child(1) {
-  background-color: black;
+  background-color:#4ca1ff;
   color: rgb(153, 144, 144);
 }
 
 .card__btn div:nth-child(2) {
-  background-color: rgb(68, 58, 58);
+  background-color: #f5f1f3;
 }
 
 
