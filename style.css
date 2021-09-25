@@ -45,9 +45,11 @@ header {
   margin-left: 150px;
   padding: 15px;
 }
-.name i{
+
+.name i {
   padding-right: 5px;
 }
+
 header .top {
   display: flex;
   justify-content: space-around;
@@ -96,8 +98,8 @@ div.phone a {
   background-color: #17ac1a;
   padding: 10px;
   color: #fff;
-  min-width: 305px;
-  margin-right: 150px;
+  min-width: 295px;
+  margin-right: 160px;
 }
 
 .header__cart i {
@@ -126,7 +128,7 @@ footer {
   background-color: #333333;
   padding: 0;
   padding-left: 150px;
-  padding-right: 185px;
+  padding-right: 150px;
 }
 
 .menu_bottom ul li {
@@ -142,9 +144,11 @@ footer {
   color: #999999;
 
 }
-.menu_bottom i{
-  padding-right:5px;
+
+.menu_bottom i {
+  padding-right: 5px;
 }
+
 .phone_1 {
   height: 50px;
   color: #999999;
@@ -406,20 +410,20 @@ aside {
 
 .card-list {
   display: flex;
-  padding: 15px;
-  justify-content: space-evenly;
+  padding: 5px;
+  justify-content: center;
 }
 
 .card {
   border: 2px solid#f5f1f3;
   padding: 5px;
   padding-bottom: 70px;
-
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  
+  width: 25%
 }
 
 .card__img {
@@ -438,7 +442,10 @@ aside {
   left: 0;
   background-color: rgba(117, 108, 108, 0.199);
 }
-
+.card__img img{
+  width:200px;
+  height: 248px;
+}
 .card__title {
   font-size: 15px;
   line-height: 20px;
@@ -468,7 +475,7 @@ aside {
 }
 
 .card__btn div:nth-child(1) {
-  background-color:#4ca1ff;
+  background-color: #4ca1ff;
   color: rgb(153, 144, 144);
 }
 
