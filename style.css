@@ -397,14 +397,36 @@ aside {
 /* =========================СЛАЙДЕР=================================*/
 .slider {
   border: 1px solid#f8f8f8;
-  max-width: 750px;
+  max-width: 800px;
   min-height: 400px;
   margin-top: 40px;
-  margin-left: 25px;
+  margin-left: 105px;
+ position:absolute
 }
-
-
-
+.sliders img{
+  max-width: 800px;
+  min-height: 400px;
+}
+#arrow-right{
+  float: right;
+  display: flex;
+  position: relative;
+  top:200px;
+}
+#arrow-left{
+  display: flex;
+  position: relative;
+  top:245px;
+}
+.slide2,.slide3 img{
+  display: none;
+}
+.slider{
+  position: relative;
+}
+.slider i{
+  color: #999999;
+}
 
 /* =========================КАРТОЧКИ ТОВАРОВ=================================*/
 
