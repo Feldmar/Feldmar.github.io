@@ -226,7 +226,7 @@ body {
 
 aside {
   margin-top: 50px;
-  padding-top: 0px;
+  padding-top: 10px;
   border: 2px solid#f8f8f8;
 }
 
@@ -1004,6 +1004,10 @@ h3.contact {
     display: none;
   }
 
+  .info.active {
+    display: none;
+  }
+
   .menu_top {
     margin-left: 15px;
     padding-left: 15px;
@@ -1053,7 +1057,6 @@ h3.contact {
   }
 
   .slider {
-
     max-width: 600px;
     min-height: 300px;
     margin-top: 20px;
@@ -1086,7 +1089,6 @@ h3.contact {
   .sidebar {
     margin-top: 100px;
     padding: 10px;
-    border: 1px solid
   }
 
   .sidebar li {
@@ -1140,7 +1142,6 @@ h3.contact {
   .top {
     flex-direction: column;
     flex-wrap: wrap;
-
   }
 
   .info {
@@ -1196,7 +1197,6 @@ h3.contact {
     min-height: 300px;
     margin-top: 20px;
     margin-left: 115px;
-    position: absolute;
     justify-content: center;
     align-items: center;
   }
@@ -1348,7 +1348,6 @@ h3.contact {
   .sidebar {
     margin-top: 100px;
     padding: 10px;
-    border: 1px solid
   }
 
   .sidebar li {
@@ -1365,6 +1364,212 @@ h3.contact {
 
   .card {
     width: 35%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+
+}
+
+@media (max-width: 600px) {
+  .header__cart {
+    float: left;
+    width: 555px;
+  }
+
+  header {
+    max-height: 90px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .info.active {
+    display: none;
+  }
+
+
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    max-width: 400px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-left: 55px;
+
+  }
+
+  .sliders img {
+    max-width: 400px;
+    min-height: 200px;
+  }
+
+  #arrow-right {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+
+  #arrow-left {
+    display: flex;
+    position: relative;
+    top: 145px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+
+  .sidebar {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .sidebar li {
+    width: 555px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 35%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+
+}
+
+@media (max-width: 500px) {
+  .header__cart {
+    float: left;
+    width: 315px;
+  }
+
+  header {
+    max-height: 95px;
+  }
+
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .search input {
+    max-width: 150px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .info.active {
+    display: none;
+  }
+
+  .menu_top {
+    float: left;
+    margin-bottom: 58px;
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .sidebar {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .sidebar li {
+    width: 555px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 65%
   }
 
   .card__img {
