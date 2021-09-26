@@ -100,7 +100,7 @@ div.phone a {
   padding: 10px;
   color: #fff;
   min-width: 295px;
-  margin-right: 160px;
+  margin-right: 50px;
 }
 
 .header__cart i {
@@ -972,7 +972,7 @@ h3.contact {
     display: flex;
     align-items: flex-end;
     padding: 10px;
-    color: #fff;
+
     min-width: 215px;
     margin-right: 100px;
   }
@@ -984,7 +984,7 @@ h3.contact {
     display: flex;
     align-items: flex-end;
     padding: 10px;
-    color: #fff;
+
     min-width: 205px;
     margin-right: 100px;
   }
@@ -1032,6 +1032,7 @@ h3.contact {
     padding: 15px;
     margin-right: 10px;
   }
+
   .main {
     display: flex;
     width: 100%;
@@ -1125,9 +1126,7 @@ h3.contact {
     float: right;
     display: flex;
     align-items: flex-end;
-
     padding: 10px;
-
     min-width: 205px;
     margin-right: 100px;
   }
@@ -1135,7 +1134,6 @@ h3.contact {
   header {
     width: 100%;
     max-height: 90px;
-
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -1149,12 +1147,13 @@ h3.contact {
   .info {
     display: none;
   }
+
   .info.active {
     display: none;
   }
+
   .menu_top {
     display: flex;
-    ;
   }
 
   .main {
@@ -1194,7 +1193,6 @@ h3.contact {
   }
 
   .slider {
-
     max-width: 500px;
     min-height: 300px;
     margin-top: 20px;
@@ -1233,7 +1231,6 @@ h3.contact {
   }
 
   .sidebar li {
-
     width: 555px;
   }
 
@@ -1246,7 +1243,6 @@ h3.contact {
   }
 
   .card {
-
     padding: 5px;
     padding-bottom: 70px;
     margin-right: 15px;
@@ -1260,53 +1256,15 @@ h3.contact {
   .card__img {
     width: 200px;
     height: 248px;
-
     position: relative;
   }
 
-  .card__img::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(117, 108, 108, 0.199);
-  }
+
 
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
-  .card__title {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .card__prise {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .card__btn {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 70px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  .card__btn div {
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 
 }
 
@@ -1315,7 +1273,6 @@ h3.contact {
   .header__cart {
     float: left;
     width: 555px;
-
   }
 
   header {
@@ -1360,7 +1317,6 @@ h3.contact {
   }
 
   .slider {
-
     max-width: 400px;
     min-height: 300px;
     margin-top: 20px;
