@@ -1737,4 +1737,21 @@ h3.contact {
   .slider {
     position: relative;
   }
+  footer {
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 58px;
+  
+  
+  }
+  
+  .menu_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    padding: 0;
+   
+  }
 }
