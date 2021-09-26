@@ -12,3 +12,8 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+*.jpg
+Новая папка/.DS_Store
+Новая папка/image/iphone6s_large.png
+Новая папка/image/vm.png
+Новая папка/map.png
