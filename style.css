@@ -1625,3 +1625,116 @@ h3.contact {
     position: relative;
   }
 }
+@media (max-width: 360px) {
+  .header__cart {
+    float: left;
+    width: 315px;
+  }
+
+  header {
+    max-height: 90px;
+    font-size: 13px;
+  }
+
+  
+
+  .search input {
+    max-width: 150px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .info.active {
+    display: none;
+  }
+
+  
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .sidebar ul{
+    padding-top:35px ;
+   
+  }
+
+  .sidebar li {
+    width: 555px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 65%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+
+  .slider {
+    max-width: 200px;
+    min-height: 100px;
+    margin-top: 20px;
+    margin-left: 55px;
+    
+  }
+
+  .sliders img {
+    max-width: 200px;
+    min-height: 100px;
+  }
+
+  #arrow-right {
+    display: flex;
+    position: relative;
+    top: 50px;
+  }
+
+  #arrow-left {
+    display: flex;
+    position: relative;
+    top: 95px;
+  }
+
+  .slider {
+    position: relative;
+  }
+}
