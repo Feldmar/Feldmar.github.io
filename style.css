@@ -1672,7 +1672,7 @@ h3.contact {
   }
 
   .card {
-    width: 65%
+    width: 75%
   }
 
   .card__img {
@@ -1693,7 +1693,7 @@ h3.contact {
     max-width: 200px;
     min-height: 100px;
     margin-top: 20px;
-    margin-left: 55px;
+    margin-left: 35px;
     
   }
 
