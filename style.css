@@ -13,24 +13,14 @@
 
 
 
-header {
-  width: 100%;
-  color: #DAA520;
-}
 
-.name {
-  color: black;
-  text-shadow: 01px 1px 2px hsla(0, 0%, 100%, 0.925);
-  padding-left: 25px;
-}
 
 body {
   height: 100%;
   width: 100%;
-  min-width: 300px;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Play', sans-serif;
-
+  overflow-x: hidden;
 }
 
 
@@ -40,53 +30,178 @@ body {
 
 
 /* =========================ХЭДЕР=================================*/
-.header a {
-  color: rgb(165, 112, 42);
+header {
+  width: 100%;
+  max-height: 50px;
+  color: #999999;
+  background-color: #333333;
+  padding-right: 100px;
+  padding-left: 100px;
+
 }
 
-.header a:hover {
-  color: rgb(255, 230, 0);
-  transform: scale;
+.name a {
+  color: rgb(255, 255, 255);
+  padding: 15px;
 }
 
-.menu ul {
-  display: flex;
+.name i {
+  padding-right: 5px;
 }
 
 header .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: #778899;
   padding: 10px;
-
 }
 
 .top a {
   text-decoration: none;
 }
 
+div.phone a {
+  color: #fff;
+  padding-left: 10px;
+  border-left: 1px solid #999999;
+}
+
+.header__top-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
 
 
+}
+
+.accaunt {
+  padding-right: 10px;
+
+}
+
+.top input {
+  width: 510px;
+  height: 30px;
+  background-color: #444444;
+}
+
+.header__top-info i {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header__cart {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  background-color: #17ac1a;
+  padding: 10px;
+  color: #fff;
+  min-width: 295px;
+  margin-right: 50px;
+}
+
+.header__cart i {
+  font-style: normal;
+  padding-right: 10px;
+}
+
+.header__cart #count_cart {
+  margin-right: 5px;
+}
+
+.search input {
+  max-width: 400px;
+}
+
+/* =========================ФУТЕР=================================*/
+footer {
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 58px;
+
+
+}
+
+.menu_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  padding: 0;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.menu_bottom ul li {
+
+  display: inline;
+  padding: 10px;
+
+}
+
+.menu_bottom ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #999999;
+
+}
+
+.menu_bottom i {
+  padding-right: 5px;
+}
+
+.phone_1 {
+  height: 50px;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262626;
+}
+
+.phone_1 a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #999999;
+}
+
+.phone_1 {
+  font-size: 15px;
+}
 
 
 
+body {
+  position: relative;
+  padding-bottom: 58px;
+  box-sizing: border-box;
+}
 
 /* =========================ПАНЕЛЬ НАВИГАЦИИ=================================*/
-.menu ul li a {
+
+.menu_top {
+  margin-left: 15px;
+  padding-left: 15px;
+  margin-bottom: 35px;
+}
+
+.menu_top ul li a {
   color: rgb(104, 102, 99);
   display: block;
   text-decoration: none;
   transition: 0.3s ease-in all;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
-.menu ul li a:hover {
-  color: rgb(197, 142, 69);
-  transform: scale(1.1);
+.menu_top ul li a:hover {
+  border-bottom: 1px dashed gray;
 }
 
-.menu ul {
+.menu_top ul {
   display: flex;
   list-style: none;
 }
@@ -109,8 +224,10 @@ header .top {
 /* =========================САЙДБАР=================================*/
 
 
-.sidebar {
-  margin: 20px 0 0 20px;
+aside {
+  margin-top: 50px;
+  padding-top: 0px;
+  border: 2px solid#f8f8f8;
 }
 
 .sidebar ul li {
@@ -130,7 +247,6 @@ header .top {
 
 /* применяем inline-block позиционирование к элементам навигации */
 .sidebar ul li {
-  margin: 0px 0 0 0;
   display: block;
 }
 
@@ -139,14 +255,15 @@ header .top {
   display: block;
   padding: 5px 5px;
   color: #53514b;
-  font-size: 15px;
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 20px;
   text-decoration: none;
 }
 
 /* изменяем цвет фона при наведении курсора */
 .sidebar a:hover {
-  background-color: #a09f9c;
+  background-color: #4ca1ff;
+  width: 250px;
 }
 
 .sidebar ul ul {
@@ -158,14 +275,14 @@ header .top {
 /* отображаем выпадающий список при наведении */
 .sidebar ul li:hover>ul {
   display: inherit;
-  background-color: #fff;
+  background-color: #f8f8f8;
   z-index: 10;
 }
 
 /* первый уровень выпадающего списка */
 .sidebar ul ul li {
-  min-width: 300px;
-  min-height: 50px;
+  min-width: 250px;
+  min-height: 30px;
   float: none;
   display: list-item;
   position: relative;
@@ -191,19 +308,22 @@ header .top {
 .main {
   display: flex;
   width: 100%;
+  margin-left: 170px;
+  padding: 15px;
+  margin-right: 215px;
 }
 
 .main__left {
   display: block;
-  width: 25%;
-  padding: 15px;
-  clear: right;
+  width: 30%;
+
 }
 
 .main__right {
   width: 70%;
   padding-top: 15px;
-  clear: right;
+  padding: 5px;
+  margin-right: 150px;
 }
 
 .main__right-title {
@@ -220,7 +340,7 @@ header .top {
 
 .info {
   font-size: 10px;
-  margin: 30px;
+  margin-top: 20px;
   display: flex;
   padding: 15px;
   border: 3px solid #f7f7f7;
@@ -246,7 +366,7 @@ header .top {
 
 
 
-.red{
+.red {
   color: var(--info-icon-color-red);
 
 }
@@ -264,13 +384,15 @@ header .top {
   color: var(--textcolor);
 }
 
-.info.active{
+.info.active {
   display: flex;
   position: relative;
   background-color: var(--border-color-for-info-icon);
   margin-top: 70px;
 }
-.active,.active .info__text-description {
+
+.active,
+.active .info__text-description {
   color: var(--textcolorinfoactive);
 }
 
@@ -278,37 +400,68 @@ header .top {
 
 /* =========================СЛАЙДЕР=================================*/
 .slider {
-  border: 1px solid rgb(153, 37, 37);
-  min-height: 200px;
-  margin-right: 25px;
+  border: 1px solid#f8f8f8;
+  max-width: 800px;
+  min-height: 400px;
+  margin-top: 40px;
+  margin-left: 105px;
+  position: absolute
 }
 
+.sliders img {
+  max-width: 800px;
+  min-height: 400px;
+}
 
+#arrow-right {
+  float: right;
+  display: flex;
+  position: relative;
+  top: 200px;
+}
 
+#arrow-left {
+  display: flex;
+  position: relative;
+  top: 245px;
+}
+
+.slide2,
+.slide3 img {
+  display: none;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider i {
+  color: #999999;
+}
 
 /* =========================КАРТОЧКИ ТОВАРОВ=================================*/
 
 .card-list {
   display: flex;
-  justify-content: space-between;
-  padding: 15px;
-
+  padding: 5px;
+  justify-content: center;
 }
 
 .card {
-  border: 2px solid rgb(168, 89, 24);
-  padding: 15px;
-  padding-bottom: 85px;
+  border: 2px solid#f5f1f3;
+  padding: 5px;
+  padding-bottom: 70px;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-right: 25px;
+  width: 25%
 }
 
 .card__img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 248px;
   background-color: rgb(114, 112, 112);
   position: relative;
 }
@@ -323,13 +476,18 @@ header .top {
   background-color: rgba(117, 108, 108, 0.199);
 }
 
+.card__img img {
+  width: 200px;
+  height: 248px;
+}
+
 .card__title {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
 }
 
 .card__prise {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -337,7 +495,7 @@ header .top {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 80px;
+  height: 70px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -352,12 +510,12 @@ header .top {
 }
 
 .card__btn div:nth-child(1) {
-  background-color: black;
+  background-color: #4ca1ff;
   color: rgb(153, 144, 144);
 }
 
 .card__btn div:nth-child(2) {
-  background-color: rgb(68, 58, 58);
+  background-color: #f5f1f3;
 }
 
 
@@ -569,41 +727,7 @@ header .top {
   margin-top: 5px;
 }
 
-/* =========================ФУТЕР=================================*/
-footer {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -900px;
-  width: 100%;
-  min-width: 300px;
-  font-size: 16px;
-  overflow: hidden;
-  color: #DAA520;
-}
 
-footer .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #778899;
-  padding: 0;
-}
-
-div.phone {
-  background-color: #708090;
-  display: block;
-  text-align: center;
-}
-
-.menu ul li {
-  margin-right: 25px;
-}
-
-.phone a {
-  color: #DAA520;
-  font-size: 13px;
-}
 
 
 
@@ -840,84 +964,421 @@ h3.contact {
 
 
 
+/* =========================АДАПТИВ================*/
+@media (max-width:1176px) {
+  .header__cart {
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+
+    min-width: 215px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width:1158px) {
+  .header__cart {
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+
+    min-width: 205px;
+    margin-right: 100px;
+  }
+
+  header {
+    width: 100%;
+    max-height: 90px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .menu_top {
+    margin-left: 15px;
+    padding-left: 15px;
+    margin-bottom: 35px;
+  }
+
+  .menu_top ul li a {
+    display: block;
+    text-decoration: none;
+    transition: 0.3s ease-in all;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+
+  .menu_top ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+
+    max-width: 600px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-left: 255px;
+    position: absolute;
+  }
+
+  .sliders img {
+    max-width: 600px;
+    min-height: 200px;
+  }
+
+  #arrow-right {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+
+  #arrow-left {
+    display: flex;
+    position: relative;
+    top: 145px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+
+  .sidebar {
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid
+  }
+
+  .sidebar li {
+    width: 555px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 35%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+}
+
+@media (max-width: 971px) {
+  .header__cart {
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    min-width: 205px;
+    margin-right: 100px;
+  }
+
+  header {
+    width: 100%;
+    max-height: 90px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .info {
+    display: none;
+  }
+
+  .info.active {
+    display: none;
+  }
+
+  .menu_top {
+    display: flex;
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .info.active {
+    display: none;
+  }
+
+  .main__right {
+    width: 70%;
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    max-width: 500px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-left: 115px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sliders img {
+    max-width: 500px;
+    min-height: 200px;
+  }
+
+  #arrow-right {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+
+  #arrow-left {
+    display: flex;
+    position: relative;
+    top: 145px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .sidebar li {
+    width: 555px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    padding: 5px;
+    padding-bottom: 70px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 35%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
 
 
 
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
 
-
-
-
-.info_tel ul li {
-  position: relative;
 }
 
 
+@media (max-width: 822px) {
+  .header__cart {
+    float: left;
+    width: 555px;
+  }
 
+  header {
+    max-height: 90px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 
-.info_tel ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  position: relative;
-}
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
+  .info {
+    display: none;
+  }
 
-/* применяем inline-block позиционирование к элементам навигации */
-.info_tel ul li {
-  display: block;
-}
-
-/* стилизуем ссылки */
-.info_tel a {
-  display: block;
-  padding: 5px 5px;
-  color: rgb(94, 37, 37);
-  font-size: 15px;
-  line-height: 40px;
-  text-decoration: none;
-}
-
-/* изменяем цвет фона при наведении курсора */
-.info_tel a:hover {
-  background-color: #5e585e;
-}
-
-.info_tel ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  font-size: 15px;
-}
-
-/* отображаем выпадающий список при наведении */
-.info_tel ul li:hover>ul {
-  display: inline;
-  background-color: rgb(83, 78, 78);
-  z-index: 0;
-}
-
-/* первый уровень выпадающего списка */
-.info_tel ul ul li {
-  max-width: 203px;
-  min-width: 203px;
-  min-height: 50px;
-  float: none;
-  display: list-item;
-  position: relative;
-}
+  .info.active {
+    display: none;
+  }
 
 
 
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    max-width: 400px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-left: 55px;
+    position: absolute;
+  }
+
+  .sliders img {
+    max-width: 400px;
+    min-height: 200px;
+  }
+
+  #arrow-right {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+
+  #arrow-left {
+    display: flex;
+    position: relative;
+    top: 145px;
+  }
+
+  .slider {
+    position: relative;
+  }
 
 
-.info_tel a {
-  text-decoration: none;
-  color: #DAA520;
-  margin-right: 25px;
-}
+  .sidebar {
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid
+  }
 
-.container1,
-.container2,
-.container3 {
-  display: inline;
+  .sidebar li {
+    width: 555px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 35%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+
 }
