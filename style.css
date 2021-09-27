@@ -396,29 +396,25 @@ aside {
 /* =========================СЛАЙДЕР=================================*/
 .slider {
   border: 1px solid#f8f8f8;
-  max-width: 800px;
+  max-width: 100%;
   min-height: 400px;
   margin-top: 40px;
   margin-left: 105px;
-  position: absolute
+  position: relative;
 }
 
 .sliders img {
-  max-width: 800px;
+  max-width: 100%;
   min-height: 400px;
 }
 
-#arrow-right {
-  float: right;
+.cont_1 {
+  position: absolute;
+  width: 100%;
   display: flex;
-  position: relative;
-  top: 200px;
-}
+  justify-content: space-between;
+  top: 50%;
 
-#arrow-left {
-  display: flex;
-  position: relative;
-  top: 245px;
 }
 
 .slide2,
@@ -426,9 +422,7 @@ aside {
   display: none;
 }
 
-.slider {
-  position: relative;
-}
+
 
 .slider i {
   color: #999999;
@@ -960,7 +954,7 @@ h3.contact {
 
 
 /* =========================АДАПТИВ================*/
-@media (max-width:1176px) {
+@media (max-width:1196px) {
   .header__cart {
     float: right;
     display: flex;
@@ -1052,33 +1046,17 @@ h3.contact {
   }
 
   .slider {
-    max-width: 600px;
+ 
     min-height: 300px;
-    margin-top: 20px;
-    margin-left: 255px;
-    position: absolute;
+   
   }
 
   .sliders img {
-    max-width: 600px;
+
     min-height: 200px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 100px;
-  }
-
-  #arrow-left {
-    display: flex;
-    position: relative;
-    top: 145px;
-  }
-
-  .slider {
-    position: relative;
-  }
+  
 
 
   .sidebar {
@@ -1117,7 +1095,7 @@ h3.contact {
 
 }
 
-@media (max-width: 971px) {
+@media (max-width: 869px) {
   .header__cart {
     float: right;
     display: flex;
@@ -1188,34 +1166,17 @@ h3.contact {
   }
 
   .slider {
-    max-width: 500px;
+   
     min-height: 300px;
-    margin-top: 20px;
-    margin-left: 115px;
-    justify-content: center;
-    align-items: center;
+   
   }
 
   .sliders img {
-    max-width: 500px;
+   
     min-height: 200px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 100px;
-  }
-
-  #arrow-left {
-    display: flex;
-    position: relative;
-    top: 145px;
-  }
-
-  .slider {
-    position: relative;
-  }
+  
 
 
   .sidebar {
@@ -1262,8 +1223,8 @@ h3.contact {
 
 }
 
+@media (max-width: 822px) {
 
-@media (max-width: 800px) {
   .header__cart {
     float: left;
     width: 555px;
@@ -1287,10 +1248,11 @@ h3.contact {
   .info.active {
     display: none;
   }
+
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-    
+
   }
 
 
@@ -1315,32 +1277,17 @@ h3.contact {
   }
 
   .slider {
-    max-width: 400px;
+   
     min-height: 300px;
-    margin-top: 20px;
-    margin-left: 55px;
-    position: absolute;
+    
   }
 
   .sliders img {
-    max-width: 400px;
+   
     min-height: 200px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 100px;
-  }
-
-  #arrow-left {
-    display: flex;
-    position: relative;
-    top: 145px;
-  }
-
-  .slider {
-    position: relative;
+  ition: relative;
   }
 
 
@@ -1348,7 +1295,6 @@ h3.contact {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    border-radius: 0px;
   }
 
   .sidebar li {
@@ -1381,9 +1327,9 @@ h3.contact {
   }
 
 
-
 }
-@media (max-width: 700px) {
+
+@media (max-width: 769px) {
   .header__cart {
     float: left;
     width: 555px;
@@ -1407,10 +1353,11 @@ h3.contact {
   .info.active {
     display: none;
   }
+
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-    
+
   }
 
 
@@ -1435,7 +1382,6 @@ h3.contact {
   }
 
   .slider {
-    max-width: 400px;
     min-height: 300px;
     margin-top: 20px;
     margin-left: 55px;
@@ -1443,25 +1389,11 @@ h3.contact {
   }
 
   .sliders img {
-    max-width: 400px;
+   
     min-height: 200px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 100px;
-  }
-
-  #arrow-left {
-    display: flex;
-    position: relative;
-    top: 145px;
-  }
-
-  .slider {
-    position: relative;
-  }
+  
 
 
   .sidebar {
@@ -1503,16 +1435,17 @@ h3.contact {
 
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 586px) {
+
   .header__cart {
     float: left;
-    width: 555px;
+    width: 400px;
   }
 
   header {
     max-height: 90px;
-    padding-right: 30px;
-    padding-left: 30px;
+
   }
 
   .top {
@@ -1531,7 +1464,7 @@ h3.contact {
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-    
+
   }
 
   .main {
@@ -1555,33 +1488,121 @@ h3.contact {
   }
 
   .slider {
-    max-width: 400px;
+
     min-height: 300px;
-    margin-top: 20px;
-    margin-left: 55px;
+   
 
   }
 
   .sliders img {
-    max-width: 400px;
+   
     min-height: 200px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 100px;
+  
+
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 
-  #arrow-left {
+  .sidebar li {
+    width: 555px;
+  }
+
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 45%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+}
+
+@media (max-width: 507px) {
+  .header__cart {
+    float: left;
+    width: 400px;
+  }
+
+  header {
+    max-height: 90px;
+
+  }
+
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .info.active {
+    display: none;
+  }
+
+  .menu_top {
+    margin-left: -55px;
+    padding-top: -25px;
+
+  }
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
     display: flex;
     position: relative;
-    top: 145px;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .slider {
-    position: relative;
+   
+    min-height: 300px;
+   
+
   }
+
+  .sliders img {
+   
+    min-height: 200px;
+  }
+
+ 
 
 
   .sidebar {
@@ -1623,7 +1644,8 @@ h3.contact {
 
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 585px) {
   .header__cart {
     float: left;
     width: 250px;
@@ -1635,7 +1657,7 @@ h3.contact {
     font-size: 13px;
   }
 
-  
+
 
   .search input {
     max-width: 150px;
@@ -1657,8 +1679,8 @@ h3.contact {
 
 
 
-  .sidebar ul{
-    padding-top:35px ;
+  .sidebar ul {
+    padding-top: 35px;
   }
 
   .sidebar li {
@@ -1692,66 +1714,57 @@ h3.contact {
 
 
   .slider {
-    max-width: 200px;
+   
     min-height: 100px;
-    margin-top: 20px;
-    margin-left: 35px;
-    
+   
+
   }
 
   .sliders img {
-    max-width: 200px;
+   
     min-height: 100px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 50px;
-  }
+ 
 
-  #arrow-left {
-    display: flex;
-    position: relative;
-    top: 95px;
-  }
+  
 
-  .slider {
-    position: relative;
-  }
   footer {
     min-width: 100%;
     position: absolute;
     bottom: 0;
     height: 58px;
   }
-  
+
   .menu_bottom {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     background-color: #333333;
     padding: 0;
     padding-left: 0px;
-    padding-right:0px;
+    padding-right: 0px;
   }
-  
+
   .menu_bottom ul li {
     display: inline;
     padding: 0px;
   }
-  
-  
-  
+
+
+
   .menu_bottom i {
     padding-right: 0px;
   }
+
+
+
 }
 
 
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 471px) {
   .header__cart {
     float: left;
     width: 250px;
@@ -1763,7 +1776,7 @@ h3.contact {
     font-size: 13px;
   }
 
-  
+
 
   .search input {
     max-width: 150px;
@@ -1785,8 +1798,8 @@ h3.contact {
 
 
 
-  .sidebar ul{
-    padding-top:35px ;
+  .sidebar ul {
+    padding-top: 35px;
   }
 
   .sidebar li {
@@ -1820,61 +1833,44 @@ h3.contact {
 
 
   .slider {
-    max-width: 200px;
     min-height: 100px;
-    margin-top: 20px;
-    margin-left: 35px;
-    
   }
 
   .sliders img {
-    max-width: 200px;
+    
     min-height: 100px;
   }
 
-  #arrow-right {
-    display: flex;
-    position: relative;
-    top: 50px;
-  }
+ 
 
-  #arrow-left {
-    display: flex;
-    position: relative;
-    top: 95px;
-  }
-
-  .slider {
-    position: relative;
-  }
   footer {
     min-width: 100%;
     position: absolute;
     bottom: 0;
     height: 58px;
   }
-  
+
   .menu_bottom {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     background-color: #333333;
     padding: 0;
     padding-left: 0px;
-    padding-right:0px;
+    padding-right: 0px;
   }
-  
+
   .menu_bottom ul li {
     display: inline;
     padding: 0px;
   }
-  
-  
-  
+
+
+
   .menu_bottom i {
     padding-right: 0px;
   }
-  
- 
-  
- 
+
+
+
+
 }
