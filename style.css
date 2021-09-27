@@ -37,7 +37,6 @@ header {
   background-color: #333333;
   padding-right: 100px;
   padding-left: 100px;
-
 }
 
 .name a {
@@ -74,7 +73,6 @@ div.phone a {
 
 .accaunt {
   padding-right: 10px;
-
 }
 
 .top input {
@@ -131,17 +129,14 @@ footer {
 }
 
 .menu_bottom ul li {
-
   display: inline;
   padding: 10px;
-
 }
 
 .menu_bottom ul li a {
   text-decoration: none;
   list-style: none;
   color: #999999;
-
 }
 
 .menu_bottom i {
@@ -222,13 +217,11 @@ body {
 aside {
   margin-top: 50px;
   padding-top: 10px;
-
 }
 
 .sidebar ul li {
   position: relative;
 }
-
 
 
 
@@ -305,13 +298,11 @@ aside {
   width: 100%;
   margin-left: 170px;
   padding: 15px;
-
 }
 
 .main__left {
   display: block;
   width: 30%;
-
 }
 
 .main__right {
@@ -340,7 +331,6 @@ aside {
   border: 3px solid #f7f7f7;
   max-width: 255px;
   max-height: 145px;
-
 }
 
 
@@ -362,7 +352,6 @@ aside {
 
 .red {
   color: var(--info-icon-color-red);
-
 }
 
 .orange {
@@ -537,7 +526,6 @@ aside {
 
 .product_description-cartBtn .count input {
   max-width: 90px;
-
 }
 
 .product_description-btn {
@@ -774,7 +762,6 @@ aside {
 }
 
 .tabs td {
-
   border: 1px solid black;
   min-width: 200px;
 }
@@ -783,11 +770,6 @@ aside {
   padding: 5px 34px;
   border: 1px solid black;
 }
-
-
-
-
-
 
 
 .hr li {
@@ -969,7 +951,6 @@ h3.contact {
     display: flex;
     align-items: flex-end;
     padding: 10px;
-
     min-width: 205px;
     margin-right: 100px;
   }
@@ -1043,18 +1024,12 @@ h3.contact {
   }
 
   .slider {
-
     min-height: 300px;
-
   }
 
   .sliders img {
-
     min-height: 200px;
   }
-
-
-
 
   .sidebar {
     margin-top: 100px;
@@ -1083,13 +1058,10 @@ h3.contact {
     position: relative;
   }
 
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
-
 }
 
 @media (max-width: 869px) {
@@ -1163,18 +1135,12 @@ h3.contact {
   }
 
   .slider {
-
     min-height: 300px;
-
   }
 
   .sliders img {
-
     min-height: 200px;
   }
-
-
-
 
   .sidebar {
     margin: 0;
@@ -1211,17 +1177,13 @@ h3.contact {
     position: relative;
   }
 
-
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
 }
 
 @media (max-width: 822px) {
-
   .header__cart {
     float: left;
     width: 555px;
@@ -1249,9 +1211,7 @@ h3.contact {
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-
   }
-
 
   .main {
     display: flex;
@@ -1274,18 +1234,12 @@ h3.contact {
   }
 
   .slider {
-
     min-height: 300px;
-
   }
 
   .sliders img {
-
     min-height: 200px;
   }
-
-
-
 
   .sidebar {
     margin: 0;
@@ -1296,7 +1250,6 @@ h3.contact {
   .sidebar li {
     width: 555px;
   }
-
 
   .main {
     display: block;
@@ -1316,14 +1269,15 @@ h3.contact {
     position: relative;
   }
 
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
-
 }
+
+
+
+
 
 @media (max-width: 769px) {
   .header__cart {
@@ -1353,9 +1307,7 @@ h3.contact {
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-
   }
-
 
   .main {
     display: flex;
@@ -1380,17 +1332,11 @@ h3.contact {
   .slider {
     min-height: 300px;
     margin-top: 20px;
-   
- 
   }
 
   .sliders img {
-
     min-height: 200px;
   }
-
-
-
 
   .sidebar {
     margin: 0;
@@ -1401,7 +1347,6 @@ h3.contact {
   .sidebar li {
     width: 555px;
   }
-
 
   .main {
     display: block;
@@ -1421,19 +1366,15 @@ h3.contact {
     position: relative;
   }
 
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
-
-
 }
 
 
-@media (max-width: 586px) {
 
+@media (max-width: 586px) {
   .header__cart {
     float: left;
     width: 400px;
@@ -1441,7 +1382,6 @@ h3.contact {
 
   header {
     max-height: 90px;
-
   }
 
   .top {
@@ -1460,7 +1400,6 @@ h3.contact {
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-
   }
 
   .main {
@@ -1484,19 +1423,12 @@ h3.contact {
   }
 
   .slider {
-
     min-height: 300px;
-
-
   }
 
   .sliders img {
-
     min-height: 200px;
   }
-
-
-
 
   .sidebar {
     margin: 0;
@@ -1507,7 +1439,6 @@ h3.contact {
   .sidebar li {
     width: 555px;
   }
-
 
   .main {
     display: block;
@@ -1527,14 +1458,13 @@ h3.contact {
     position: relative;
   }
 
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
-
 }
+
+
 
 @media (max-width: 507px) {
   .header__cart {
@@ -1544,7 +1474,6 @@ h3.contact {
 
   header {
     max-height: 90px;
-
   }
 
   .top {
@@ -1563,7 +1492,6 @@ h3.contact {
   .menu_top {
     margin-left: -55px;
     padding-top: -25px;
-
   }
 
   .main {
@@ -1587,19 +1515,12 @@ h3.contact {
   }
 
   .slider {
-
     min-height: 300px;
-
-
   }
 
   .sliders img {
-
     min-height: 200px;
   }
-
-
-
 
   .sidebar {
     margin: 0;
@@ -1610,7 +1531,6 @@ h3.contact {
   .sidebar li {
     width: 555px;
   }
-
 
   .main {
     display: block;
@@ -1630,14 +1550,10 @@ h3.contact {
     position: relative;
   }
 
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
-
-
-
 }
 
 
@@ -1652,8 +1568,6 @@ h3.contact {
     max-height: 90px;
     font-size: 13px;
   }
-
-
 
   .search input {
     max-width: 150px;
@@ -1672,8 +1586,6 @@ h3.contact {
     justify-content: center;
     align-items: center;
   }
-
-
 
   .sidebar ul {
     padding-top: 35px;
@@ -1701,27 +1613,18 @@ h3.contact {
     position: relative;
   }
 
-
   .card__img img {
     width: 200px;
     height: 248px;
   }
 
-
-
   .slider {
-
     min-height: 100px;
-
   }
 
   .sliders img {
     min-height: 100px;
   }
-
-
-
-
 
   footer {
     min-width: 100%;
@@ -1744,12 +1647,9 @@ h3.contact {
     padding: 0px;
   }
 
-
-
   .menu_bottom i {
     padding-right: 0px;
   }
-
 }
 
 
@@ -1767,6 +1667,7 @@ h3.contact {
     max-height: 90px;
     font-size: 13px;
   }
+
   .search input {
     max-width: 150px;
   }
@@ -1784,8 +1685,6 @@ h3.contact {
     justify-content: center;
     align-items: center;
   }
-
-
 
   .sidebar ul {
     padding-top: 35px;
@@ -1807,9 +1706,6 @@ h3.contact {
     width: 75%
   }
 
-
-
-
   .slider {
     min-height: 100px;
   }
@@ -1817,12 +1713,14 @@ h3.contact {
   .sliders img {
     min-height: 100px;
   }
+
   footer {
     min-width: 100%;
     position: absolute;
     bottom: 0;
     height: 58px;
   }
+
   .menu_bottom {
     display: flex;
     justify-content: left;
@@ -1831,10 +1729,12 @@ h3.contact {
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .menu_bottom ul li {
     display: inline;
     padding: 0px;
   }
+
   .menu_bottom i {
     padding-right: 0px;
   }
