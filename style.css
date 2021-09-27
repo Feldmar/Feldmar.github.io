@@ -1263,7 +1263,7 @@ h3.contact {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 842px) {
   .header__cart {
     float: left;
     width: 555px;
@@ -1383,7 +1383,7 @@ h3.contact {
 
 
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .header__cart {
     float: left;
     width: 555px;
