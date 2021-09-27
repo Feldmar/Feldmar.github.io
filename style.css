@@ -1263,7 +1263,127 @@ h3.contact {
 }
 
 
-@media (max-width: 822px) {
+@media (max-width: 800px) {
+  .header__cart {
+    float: left;
+    width: 555px;
+  }
+
+  header {
+    max-height: 90px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .top {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .info.active {
+    display: none;
+  }
+  .menu_top {
+    margin-left: -55px;
+    padding-top: -25px;
+    
+  }
+
+
+  .main {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .main__right {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .card-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider {
+    max-width: 400px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-left: 55px;
+    position: absolute;
+  }
+
+  .sliders img {
+    max-width: 400px;
+    min-height: 200px;
+  }
+
+  #arrow-right {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+
+  #arrow-left {
+    display: flex;
+    position: relative;
+    top: 145px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-radius: 0px;
+  }
+
+  .sidebar li {
+    width: 555px;
+  }
+
+
+  .main {
+    display: block;
+  }
+
+  .main__right {
+    display: block;
+  }
+
+  .card {
+    width: 35%
+  }
+
+  .card__img {
+    width: 200px;
+    height: 248px;
+    position: relative;
+  }
+
+
+  .card__img img {
+    width: 200px;
+    height: 248px;
+  }
+
+
+
+}
+@media (max-width: 700px) {
   .header__cart {
     float: left;
     width: 555px;
@@ -1506,11 +1626,13 @@ h3.contact {
 @media (max-width: 500px) {
   .header__cart {
     float: left;
-    width: 315px;
+    width: 250px;
   }
 
   header {
-    max-height: 95px;
+    max-width: 100%;
+    max-height: 90px;
+    font-size: 13px;
   }
 
   
@@ -1527,26 +1649,6 @@ h3.contact {
     display: none;
   }
 
-  .menu_top {
-    margin-left: -55px;
-    padding-bottom: 0px;
-    
-  }
-
-  .main {
-    display: flex;
-    width: 100%;
-    margin-left: 10px;
-    padding: 15px;
-    
-  }
-
-  .main__right {
-    width: 100%;
-    display: flex;
-    position: relative;
-  }
-
   .card-list {
     flex-direction: column;
     justify-content: center;
@@ -1555,14 +1657,12 @@ h3.contact {
 
 
 
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  .sidebar ul{
+    padding-top:35px ;
   }
 
   .sidebar li {
-    width: 400px;
+    width: 150px;
   }
 
   .main {
@@ -1574,7 +1674,7 @@ h3.contact {
   }
 
   .card {
-    width: 65%
+    width: 75%
   }
 
   .card__img {
@@ -1595,7 +1695,7 @@ h3.contact {
     max-width: 200px;
     min-height: 100px;
     margin-top: 20px;
-    margin-left: 55px;
+    margin-left: 35px;
     
   }
 
@@ -1619,8 +1719,39 @@ h3.contact {
   .slider {
     position: relative;
   }
+  footer {
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 58px;
+  }
+  
+  .menu_bottom {
+    display: flex;
+    justify-content:left;
+    background-color: #333333;
+    padding: 0;
+    padding-left: 0px;
+    padding-right:0px;
+  }
+  
+  .menu_bottom ul li {
+    display: inline;
+    padding: 0px;
+  }
+  
+  
+  
+  .menu_bottom i {
+    padding-right: 0px;
+  }
 }
-@media (max-width: 375px) {
+
+
+
+
+
+@media (max-width: 400px) {
   .header__cart {
     float: left;
     width: 250px;
