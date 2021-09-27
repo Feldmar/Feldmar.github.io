@@ -222,7 +222,7 @@ body {
 aside {
   margin-top: 50px;
   padding-top: 10px;
-  border: 2px solid#f8f8f8;
+
 }
 
 .sidebar ul li {
@@ -305,7 +305,7 @@ aside {
   width: 100%;
   margin-left: 170px;
   padding: 15px;
-  margin-right: 215px;
+
 }
 
 .main__left {
@@ -315,10 +315,9 @@ aside {
 }
 
 .main__right {
-  width: 70%;
+  width: 65%;
   padding-top: 15px;
   padding: 5px;
-  margin-right: 150px;
 }
 
 .main__right-title {
@@ -396,10 +395,10 @@ aside {
 /* =========================СЛАЙДЕР=================================*/
 .slider {
   border: 1px solid#f8f8f8;
-  max-width: 100%;
+  width: 100%;
   min-height: 400px;
   margin-top: 40px;
-  margin-left: 105px;
+  margin-left: 40px;
   position: relative;
 }
 
@@ -414,7 +413,6 @@ aside {
   display: flex;
   justify-content: space-between;
   top: 50%;
-
 }
 
 .slide2,
@@ -960,7 +958,6 @@ h3.contact {
     display: flex;
     align-items: flex-end;
     padding: 10px;
-
     min-width: 215px;
     margin-right: 100px;
   }
@@ -1046,9 +1043,9 @@ h3.contact {
   }
 
   .slider {
- 
+
     min-height: 300px;
-   
+
   }
 
   .sliders img {
@@ -1056,7 +1053,7 @@ h3.contact {
     min-height: 200px;
   }
 
-  
+
 
 
   .sidebar {
@@ -1166,17 +1163,17 @@ h3.contact {
   }
 
   .slider {
-   
+
     min-height: 300px;
-   
+
   }
 
   .sliders img {
-   
+
     min-height: 200px;
   }
 
-  
+
 
 
   .sidebar {
@@ -1277,18 +1274,17 @@ h3.contact {
   }
 
   .slider {
-   
+
     min-height: 300px;
-    
+
   }
 
   .sliders img {
-   
+
     min-height: 200px;
   }
 
-  ition: relative;
-  }
+
 
 
   .sidebar {
@@ -1384,16 +1380,16 @@ h3.contact {
   .slider {
     min-height: 300px;
     margin-top: 20px;
-    margin-left: 55px;
-    position: absolute;
+   
+ 
   }
 
   .sliders img {
-   
+
     min-height: 200px;
   }
 
-  
+
 
 
   .sidebar {
@@ -1490,16 +1486,16 @@ h3.contact {
   .slider {
 
     min-height: 300px;
-   
+
 
   }
 
   .sliders img {
-   
+
     min-height: 200px;
   }
 
-  
+
 
 
   .sidebar {
@@ -1591,18 +1587,18 @@ h3.contact {
   }
 
   .slider {
-   
+
     min-height: 300px;
-   
+
 
   }
 
   .sliders img {
-   
+
     min-height: 200px;
   }
 
- 
+
 
 
   .sidebar {
@@ -1714,20 +1710,18 @@ h3.contact {
 
 
   .slider {
-   
+
     min-height: 100px;
-   
 
   }
 
   .sliders img {
-   
     min-height: 100px;
   }
 
- 
 
-  
+
+
 
   footer {
     min-width: 100%;
@@ -1756,8 +1750,6 @@ h3.contact {
     padding-right: 0px;
   }
 
-
-
 }
 
 
@@ -1775,9 +1767,6 @@ h3.contact {
     max-height: 90px;
     font-size: 13px;
   }
-
-
-
   .search input {
     max-width: 150px;
   }
@@ -1818,17 +1807,6 @@ h3.contact {
     width: 75%
   }
 
-  .card__img {
-    width: 200px;
-    height: 248px;
-    position: relative;
-  }
-
-
-  .card__img img {
-    width: 200px;
-    height: 248px;
-  }
 
 
 
@@ -1837,19 +1815,14 @@ h3.contact {
   }
 
   .sliders img {
-    
     min-height: 100px;
   }
-
- 
-
   footer {
     min-width: 100%;
     position: absolute;
     bottom: 0;
     height: 58px;
   }
-
   .menu_bottom {
     display: flex;
     justify-content: left;
@@ -1858,19 +1831,11 @@ h3.contact {
     padding-left: 0px;
     padding-right: 0px;
   }
-
   .menu_bottom ul li {
     display: inline;
     padding: 0px;
   }
-
-
-
   .menu_bottom i {
     padding-right: 0px;
   }
-
-
-
-
 }
