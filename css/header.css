@@ -17,6 +17,10 @@
     justify-content: flex-end
 }
 
+nav.header_menu {
+    display: flex;
+}
+
 .cart {
     display: flex;
     flex-direction: column;
@@ -71,4 +75,15 @@ header {
 
 header a {
     color: #000;
+}
+
+@media(max-width:576px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    
 }
