@@ -13,13 +13,15 @@
     display: flex;
     flex-direction: column;
     padding-right: 10px;
-    align-items: center
+    align-items: center;
+    justify-content: flex-end
 }
 
 .cart {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    justify-content: flex-end;
 }
 
 header {
@@ -64,11 +66,9 @@ header {
 
 .header__card {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 header a {
     color: #000;
 }
-
-
