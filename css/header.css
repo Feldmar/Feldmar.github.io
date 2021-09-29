@@ -7,14 +7,16 @@
 
 .header__card {
     font-size: 32px;
-    
+
 }
-.log_in{
+
+.log_in {
     display: flex;
     flex-direction: column;
-    padding-right:10px;
+    padding-right: 10px;
 }
-.cart{
+
+.cart {
     display: flex;
     flex-direction: column;
 }
@@ -35,7 +37,7 @@ header {
     text-decoration: none;
 }
 
-.header__card  a {
+.header__card a {
     text-decoration: none;
     font-size: 18px;
 
@@ -60,6 +62,6 @@ header {
     align-items: baseline;
 }
 
-.header__card  {
+.header__card {
     display: flex;
 }
