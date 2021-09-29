@@ -64,6 +64,7 @@ header {
 
 .header__card {
     display: flex;
+    align-items: center;
 }
 
 header a {
