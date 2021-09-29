@@ -1,4 +1,5 @@
 
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -11,7 +12,7 @@ ul[class],
 ol[class] {
   padding: 0;
 }
-
+   
 /* Убираем внешние отступы */
 body,
 h1,
