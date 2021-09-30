@@ -6,6 +6,7 @@
   --font-dm-sans: 'DM Sans', sans-serif;
   --font-roboto: 'Roboto', sans-serif;
   --accent: #0126DE;
+  --orange: #FFC3A0;
   --gray: #F5EDE7;
   --xxl: 1320px;
   --xl: 1140px;
@@ -44,3 +45,4 @@ body {
 @media(max-width:576px) {
   .wrapper{
     max-width: 100%;}
+  }

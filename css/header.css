@@ -34,6 +34,10 @@ header {
     border-bottom: 1px solid #000;
 }
 
+.header__menu {
+    padding-left: 15px;
+}
+
 .header__menu ul li {
     display: inline;
     text-transform: uppercase;
@@ -80,10 +84,19 @@ header a {
 @media(max-width:576px) {
     .header {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 0 15px;
+    }
+    .wrapper{
+        font-size: 20px;
+    }
+    .header__logo__menu{
+        width: 100%;
     }
 
 
 
-    
+
+
 }
