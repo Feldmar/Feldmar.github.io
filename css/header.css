@@ -1,9 +1,13 @@
+
+header{
+border-bottom: 1px solid black;
+}
 .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    margin-bottom: 15px;
+   padding-bottom: 15px;
 }
 
 .header__left {
@@ -19,6 +23,7 @@
 
 .header__menu li {
     margin-right: 15px;
+    text-transform: uppercase;
 }
 
 .header__menu a {
