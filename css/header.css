@@ -1,102 +1,88 @@
-:root {
-    --font-dm-sans: 'DM Sans', sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
-    --accent: #0126DE;
-    --gray: #F5EDE7;
-}
-
-.header__card {
-    font-size: 32px;
-}
-
-.log_in {
-    display: flex;
-    flex-direction: column;
-    padding-right: 10px;
-    align-items: center;
-    justify-content: flex-end
-}
-
-nav.header_menu {
-    display: flex;
-}
-
-.cart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-header {
-    height: 88px;
-    background-color: var(--gray);
-    border-bottom: 1px solid #000;
-}
-
-.header__menu {
-    padding-left: 15px;
-}
-
-.header__menu ul li {
-    display: inline;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding-right: 10px;
-}
-
-.header__menu ul li a {
-    text-decoration: none;
-}
-
-.header__card a {
-    text-decoration: none;
-    font-size: 18px;
-    align-items: center;
-}
-
-
-header {
+.header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 0;
+    padding-top: 15px;
+    margin-bottom: 15px;
 }
 
-.header__logo.header__menu {
-    justify-content: flex-start;
-}
-
-.header__logo__menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-
-.header__card {
+.header__left {
     display: flex;
     align-items: flex-end;
 }
 
-header a {
-    color: #000;
+.header__menu {
+    margin-left: 15px;
+    list-style: none;
+    display: flex;
 }
 
-@media(max-width:576px) {
+.header__menu li {
+    margin-right: 15px;
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.header__cart {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__card-user {
+    margin-right: 15px;
+}
+
+.header__card-user,
+.header__card-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header__card-user,
+.header__card-cart i {
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
     .header {
-        display: flex;
         justify-content: start;
         align-items: flex-start;
         padding: 0 15px;
     }
-    .wrapper{
-        font-size: 20px;
-    }
-    .header__logo__menu{
+
+    .header,
+    .header__left {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
         width: 100%;
     }
 
+    .header__menu,
+    .header__logo {
+        margin-top: 30px;
+    }
 
+    .header__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
+    .header__left {
+        order: 2;
+    }
 
-
+    .header__cart {
+        order: 1;
+        width: 100%;
+        justify-content: end;
+        margin-top: 10px;
+    }
 }
