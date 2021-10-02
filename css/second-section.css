@@ -1,13 +1,14 @@
 .second-section {
     width: 100%;
-    padding: 30px;
+    padding-top: 30px;
     display: flex;
     border-bottom: 1px solid white;
+    padding-bottom: 30px;
 }
 
 .second-section__image {
     width: 60%;
-    max-height: 500px;
+
 }
 
 .second-section__inside {
@@ -55,6 +56,8 @@
 
     .second-section__image {
         width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     .second-section__inside {
