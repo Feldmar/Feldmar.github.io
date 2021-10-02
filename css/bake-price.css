@@ -10,8 +10,7 @@
     grid-template-areas:
         "bake__1 bake__2 bake__3"
         "bake__4 bake__5 bake__6";
-    padding-top: 25px;
-    padding-bottom: 25px;
+    
     border-bottom: 1px solid white;
 }
 
@@ -45,12 +44,17 @@
     color: var(--text);
     font-size: 25px;
     font-family: var(--font-roboto);
-   
 }
 
 .bake__price p {
     text-transform: uppercase;
     font-size: 20px;
+}
+
+@media(max-width:992px) {
+    .bake__price a {
+        font-size: 20px;
+    }
 }
 
 @media(max-width:768px) {
@@ -62,20 +66,23 @@
             "bake__5 bake__6";
     }
 }
+
 @media(max-width:576px) {
     .bake__price {
+        justify-items: center;
         grid-template-columns: 1fr;
         grid-template-areas:
             "bake__1"
             "bake__2"
-            "bake__3" 
+            "bake__3"
             "bake__4"
-            "bake__5" 
+            "bake__5"
             "bake__6";
     }
-  .bake{
-    padding-right: 15px;
-    padding-left: 15px;
-    text-align: center;
-  }
+
+    .bake {
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align: center;
+    }
 }
