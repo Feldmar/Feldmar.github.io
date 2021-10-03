@@ -1,0 +1,14 @@
+.huge__image {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid white;
+}
+
+
+
+
+@media(max-width:768px) {
+  .huge__image {
+    display: none;
+  }
+}
