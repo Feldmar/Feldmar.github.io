@@ -1,9 +1,12 @@
+
+.unit{
+padding-top: 25px;
+    padding-bottom: 65px;
+}
 .unit_b {
     justify-items: center;
     justify-self: center;
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 50% 50%;
@@ -30,6 +33,9 @@
     grid-area: unit__4;
 }
 
+.unit__4 img{
+    max-height: 490px;
+}
 
 .unit__text {
     font-size: 23px;

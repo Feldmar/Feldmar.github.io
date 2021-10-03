@@ -4,6 +4,7 @@
     padding-bottom: 25px;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid white;
 }
 .particle__description{
     padding: 15px;
