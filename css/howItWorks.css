@@ -4,6 +4,7 @@
   width: 100%;
   border-bottom: 1px solid white;
 }
+
 .howItWorks__title {
   width: 100%;
   display: flex;
@@ -11,12 +12,14 @@
   font-size: 30px;
   line-height: 35px;
 }
+
 .howItWorks__items {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
+
 .howItWorks__item {
   flex: 1 1 200px;
   display: flex;
@@ -24,15 +27,18 @@
   align-items: center;
   margin: 0 15px;
 }
+
 .howItWorks__item-title {
   margin-top: 15px;
   font-size: 30px;
   line-height: 35px;
   display: block;
 }
+
 .howItWorks__item-description {
   margin-top: 15px;
 }
+
 .howItWorks__button {
   margin-top: 50px;
   display: flex;

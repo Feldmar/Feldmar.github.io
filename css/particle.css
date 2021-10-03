@@ -6,9 +6,11 @@
     justify-content: space-around;
     border-bottom: 1px solid white;
 }
-.particle__description{
+
+.particle__description {
     padding: 15px;
 }
+
 .particle__1,
 .particle__2,
 .particle__3 {
@@ -45,7 +47,8 @@
         display: flex;
         justify-content: center;
     }
-    .particle__description{
+
+    .particle__description {
         padding: 10px;
     }
 }

@@ -14,22 +14,23 @@
 	outline: none;
 	transition: all .1s ease;
 	cursor: pointer;
-  }
-  
-  .button:focus,
-  .button:hover {
+}
+
+.button:focus,
+.button:hover {
 	text-decoration: none;
 	color: lighten(var(--accent), 5%);
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
 	background-color: lighten(var(--accent), 5%)
-  }
-  
-  .button:active {
+}
+
+.button:active {
 	background-color: darken(var(--accent), 5%)
-  }
-  .button-black {
+}
+
+.button-black {
 	border: 1px solid var(--text);
 	color: var(--text);
-  }
+}
