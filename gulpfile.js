@@ -17,7 +17,6 @@ const newer        = require('gulp-newer')
 const rsync        = require('gulp-rsync')
 const del          = require('del')
 
-
 function browsersync() {
 	browserSync.init({
 		server: {
@@ -123,4 +122,3 @@ exports.deploy  = deploy
 exports.assets  = series(scripts, styles, images)
 exports.build   = series(cleandist, scripts, styles, images, buildcopy, buildhtml)
 exports.default = series(scripts, styles, images, parallel(browsersync, startwatch))
-
