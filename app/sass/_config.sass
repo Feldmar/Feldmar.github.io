@@ -1,3 +1,7 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Georama:wght@100&family=Noto+Serif&display=swap);
+$font-noto-serif: 'Noto Serif', serif
+$font-georama: 'Georama', sans-serif
 // USER VARIABLES SECTION
 $xxl: 1320px
 $xl: 1140px
@@ -10,45 +14,28 @@ $white: #FFFFFF
 $black: #000
 $beige: #E5E5E5
 
-body 
-    background-color: $accent
-.wrapper 
+body
+    background-color: $beige
+.wrapper
     max-width: $xxl
     margin: 0 auto
-
-@media(max-width: 1400px) 
-    .wrapper 
+@media(max-width: 1400px)
+    .wrapper
         max-width: $xl
-@media(max-width: 1200px) 
-    .wrapper 
-        max-width: $lg 
-@media(max-width: 992px) 
-    .wrapper 
+@media(max-width: 1200px)
+    .wrapper
+        max-width: $lg
+@media(max-width: 992px)
+    .wrapper
         max-width: $md
-
-@media(max-width: 768px) 
-    .wrapper 
+@media(max-width: 768px)
+    .wrapper
         max-width: $sm
-@media(max-width: 576px) 
-    .wrapper 
+@media(max-width: 576px)
+    .wrapper
         max-width: 100%
-
-// Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px
-$gutter: $grid-gutter-width
 
 // IMPORT SECTION
 
 @import reset
 
-// FONTS LOAD SECTION
-$font-noto-serif: 'Noto Serif', serif
-$font-georama: 'Georama', sans-serif
-@mixin font($fname, $fstyle, $fweight, $furl)
-	@font-face
-		font-family: $fname
-		font-style: $fstyle
-		font-weight: $fweight
-		src: url($furl) format('ttf')
-
-@include font('georama', italic, 400, '../fonts/Georama-Italic-VariableFont_wdth,wght.ttf')
