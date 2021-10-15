@@ -1,4 +1,23 @@
-header
+.header
     font-family: $font-noto-serif
-    __logo
-        content: url(../images/logo.svg)
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    li
+        display: inline;
+        list-style: none
+        padding-right: 15px 
+    &__right
+        display: flex
+        flex-direction: row
+    i
+        padding: 0 15px 0 15px
+    &__search
+        border-left: 1px solid #706969
+        padding-left: 5px
+    &__account
+        padding-right: 15px
+@media screen and (max-width: 768px)
+    .header
+        flex-direction: column
