@@ -12,10 +12,30 @@
         font-size: 55px
         font-weight: 900
         padding-bottom: 15px
+.slider__arrow
+    i
+        padding: 5px
+        border: 1px solid $gray
+        margin-top: 10px
+        color: $accent
+        margin-right: 10px
+.line
+    width: 140px
+    height: 2px
+    background-color: $gray
+    margin-left: 95px
+    top: -23px
+    position: relative
+.slider__number
+    margin-left: 285px
+    top: -43px
+    position: relative
+    font-size: 25px
+    color: $accent
 .parametrs
     position: sticky
     margin-left: 400px
-    margin-top: -50px
+    margin-top: -150px
     padding: 20px
     background-color: #fff
     display: flex
@@ -30,8 +50,25 @@
 select
     height: 28px
     width: 150px
+    border: 0
+    border-bottom: 1px solid $accent
+    color: $accent
 input
     width: 150px
+    border: 0
+    border-bottom: 1px solid $accent
+    color: $accent
+input[type="number"]
+    background-image: url(../images/dollar.jpg)
+    background-repeat: no-repeat
+    background-position: right
+input
+	&::-webkit-input-placeholder
+		color: $accent
+	&::-moz-placeholder
+		color: $accent
+	&:-ms-input-placeholder
+		color: $accent
 .btn__second
     margin-top: 25px
 @media screen and (max-width: 1200px)
@@ -40,9 +77,9 @@ input
         align-items: center
         margin-top: 0
         position: relative
-        margin-left: 80px
+        margin-left: 70px
         margin-top: 20px
-        margin-right: 80px
+        margin-right: 70px
     .slider
         &__title
             font-size: 25px
@@ -51,5 +88,5 @@ input
         &__title
             font-size: 16px
         &__info
-            bottom: 10%
+            bottom: 15%
             left: 5%
