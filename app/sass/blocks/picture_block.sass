@@ -14,7 +14,42 @@
         padding-bottom: 15px
 .parametrs
     position: sticky
-    margin-left: 450px
+    margin-left: 400px
     margin-top: -50px
+    padding: 20px
     background-color: #fff
-    
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    p
+        font-family: $font-georama
+        font-weight: 600
+        color: $gray
+        padding-bottom: 10px
+select
+    height: 28px
+    width: 150px
+input
+    width: 150px
+.btn__second
+    margin-top: 25px
+@media screen and (max-width: 1200px)
+    .parametrs
+        flex-direction: column
+        align-items: center
+        margin-top: 0
+        position: relative
+        margin-left: 80px
+        margin-top: 20px
+        margin-right: 80px
+    .slider
+        &__title
+            font-size: 25px
+@media screen and (max-width: 576px)
+    .slider
+        &__title
+            font-size: 16px
+        &__info
+            bottom: 10%
+            left: 5%

@@ -16,25 +16,31 @@
             </div>
         </div>
         <div class="parametrs">
+            
             <div class="parametrs__chapter">
-                <div class="parametrs__destinations">
-                    <div class="parametrs__destinations-title">Destinations</div>
-                    <div class="parametrs__destinations-field"></div>
+                <p>Destinations</p>
+                <select name="type" id="dist">
+                    <option value="none" hidden="">Выберите тип</option>
+                    <option value="1">первый вариант</option>
+                    <option value="2">второй вариант</option>
+                    <option value="3">третий вариант</option>
+                    </select>
                 </div>
                 <div class="parametrs__check">
-                    <div class="parametrs__check-title">Check In</div>
-                    <div class="parametrs__check-field"></div>
+                    <p>Check In</p>
+                    <input type="date" name="calendar">
                 </div>
                 <div class="parametrs__price">
-                    <div class="parametrs__price-title">Price Range</div>
-                    <div class="parametrs__price-field"></div>
+                    <p>Price Range</p>
+                    <input type="number" name="number" placeholder="$500 - $10,0000" min="500" max="100000">
                 </div>
+                
                 <div class="parametrs__button">
-                    <button type="button" class="btn btn">
+                    <button type="button" class="btn__second">
                         <span>Discover Now</span>
                     </button>
-                </div>
+                </div></div>
             </div>
         </div>
-    </div>
+    
 </section>
