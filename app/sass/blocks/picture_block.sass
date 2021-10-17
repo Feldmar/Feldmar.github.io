@@ -3,6 +3,9 @@
 .slider
     &__image
         position: relative
+        display: none
+        &.active
+            display: block
     &__info
         position: absolute
         bottom: 45%
@@ -19,6 +22,7 @@
         margin-top: 10px
         color: $accent
         margin-right: 10px
+        cursor: pointer
 .line
     width: 140px
     height: 2px

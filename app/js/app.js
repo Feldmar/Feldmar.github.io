@@ -4,25 +4,38 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 	
-	const testBtn = document.querySelector('#test');
-	const testBtn2 = document.querySelector('#test2');
-	const content = document.querySelector('.content');
+	const images = [...document.querySelectorAll('.slider__image')]
+	const left = document.querySelector('#left');
+	const right = document.querySelector('#right');
+	const number = document.querySelector('.slider__number');
 
-	console.log(content);
-	testBtn.addEventListener('click', function(e) {
-		if (!e.isTrusted) return;
-		// console.log(e);
-		content.innerHTML = `<div>1</div>
-		<div>2</div>
-		<div>3</div>
-		<div>4</div>
-		<div>5</div> `;
+	let el = 0
+	images.forEach((el, i) => {
+		if (i === 0) {
+			el.classList.add('active')
+		}
 	})
-	testBtn2.addEventListener('click', function(e) {
-		if (!e.isTrusted) return;
-		// console.log(e);
-		content.innerHTML = ``;
+	number.textContent = el
+
+	function changeSlide() {
+		images.forEach((el) => {
+			el.classList.remove('active')
+		})
+		images[el].classList.add('active')
+		number.textContent = el
+	}
+
+	left.addEventListener('click', (event) => {
+		if (!event.isTrusted) return;
+		const target = event.target;
+		el = el - 1
+		changeSlide()
 	})
-	
-	
+
+	right.addEventListener('click', (event) => {
+		if (!event.isTrusted) return;
+		const target = event.target;
+		el = el + 1
+		changeSlide()
+	})
 })
