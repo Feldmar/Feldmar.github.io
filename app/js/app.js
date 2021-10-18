@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const target = event.target;
 		el = el - 1
 		changeSlide()
+		
 	})
 
 	right.addEventListener('click', (event) => {
@@ -38,4 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		el = el + 1
 		changeSlide()
 	})
+	
+	})
+	
+
+
 })
