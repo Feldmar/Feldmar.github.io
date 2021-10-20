@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+	document.getElementById('button').onclick = function (){alert("Здравствуйте, я из компании Орифлейм)")}
 
 
 })
