@@ -17,6 +17,8 @@
         &:hover
             background-color: $white
             box-shadow: 0 0 10px rgba(0,0,0,0.5)
+            animation: card__list-block 0.4s ease
+            animation-fill-mode: forwards
         &-text
             width: 70%
             color: $gray
@@ -30,6 +32,11 @@
             font-family: $font-noto-serif
             font-size: 15px
             font-weight: 600
+@keyframes card__list-block
+    50%
+        transform: scale(1.1)
+    100%
+        transform: scale(1)
 @media screen and (max-width: 992px)
     .card__list
         flex-direction: column
