@@ -1,0 +1,53 @@
+.beacon
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: baseline
+    flex-direction: row
+    &__info
+        width: 45%
+        flex-direction: column
+        &-title
+            font-family: $font-noto-serif
+            font-weight: 800
+            font-size: 35px
+            &-one
+                font-family: $font-noto-serif
+                font-size: 18px
+                font-weight: 600
+            &-sec
+                font-family: $font-noto-serif
+                font-size: 18px
+                font-weight: 600
+            &-three
+                font-family: $font-noto-serif
+                font-size: 18px
+                font-weight: 600
+            &-desc
+                font-family: $font-georama
+                font-weight: 600
+                font-size: 14px
+                color: $gray
+    &__image
+        width: 50%
+        &-beacon
+            position: absolute
+            z-index: 100
+            padding-left: 80px
+            & img
+                max-height: 600px
+        &-rectangle
+            position: relative
+            z-index: 0
+            left: 73%
+            bottom: -79px
+        &-ellipse
+            position: relative
+            z-index: 0
+            bottom: -260px
+            left: -35px
+        &-pattern
+            position: relative
+            z-index: 0
+            bottom: -445px
+            left: 13px
