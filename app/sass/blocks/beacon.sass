@@ -1,33 +1,74 @@
 .beacon
-    width: 100%
     display: flex
-    justify-content: center
+    justify-content: space-evenly
     align-items: baseline
     flex-direction: row
     &__info
-        width: 45%
+        width: 50%
         flex-direction: column
+        position: relative
+        top: -100px
+        & hr
+            width: 80%
+            color: #adadad
         &-title
             font-family: $font-noto-serif
             font-weight: 800
             font-size: 35px
+            padding-bottom: 10px
             &-one
+                padding-top: 10px
+                padding-bottom: 10px
+                & span
                 font-family: $font-noto-serif
                 font-size: 18px
                 font-weight: 600
+                & i
+                    padding: 10px
+                    background-color: $accent
+                    color: $white
+                    border-radius: 6px
+                    margin-right: 20px
+                    cursor: pointer
+                    &:hover
+                        box-shadow: 4px 4px 24px 0px rgba(241, 255, 19, 0.45)
             &-sec
                 font-family: $font-noto-serif
                 font-size: 18px
                 font-weight: 600
+                padding-top: 20px
+                padding-bottom: 20px
+                & i
+                    padding: 10px
+                    background-color: #EDFAE3
+                    color: #65CE54
+                    border-radius: 6px
+                    margin-right: 20px
+                    cursor: pointer
+                    &:hover
+                        box-shadow: 4px 4px 24px 0px rgba(241, 255, 19, 0.45)
             &-three
                 font-family: $font-noto-serif
                 font-size: 18px
                 font-weight: 600
+                padding-top: 10px
+                padding-bottom: 10px
+                & i
+                    padding: 10px
+                    background-color: #FFF8E3
+                    color: orange
+                    border-radius: 6px
+                    margin-right: 20px
+                    cursor: pointer
+                    &:hover
+                        box-shadow: 4px 4px 24px 0px rgba(241, 255, 19, 0.45)
             &-desc
                 font-family: $font-georama
                 font-weight: 600
                 font-size: 14px
                 color: $gray
+                padding-left: 60px
+                padding-top: 10px
     &__image
         width: 50%
         &-beacon
@@ -36,11 +77,16 @@
             padding-left: 80px
             & img
                 max-height: 600px
+                cursor: pointer
+                &:hover
+                    box-shadow: 20px 20px 30px pink, -20px 20px 30px violet, -20px -20px 30px violet, 20px -20px 30px pink
         &-rectangle
             position: relative
             z-index: 0
             left: 73%
             bottom: -79px
+            max-width: 142px
+            min-width: 42px
         &-ellipse
             position: relative
             z-index: 0
@@ -51,3 +97,49 @@
             z-index: 0
             bottom: -445px
             left: 13px
+@media screen and (max-width: 1400px)
+    .beacon
+        &__image
+            &-rectangle
+                left: 0
+@media screen and (max-width: 1200px)
+    .beacon
+        &__info
+            padding-left: 100px
+            &-title
+                font-size: 25px
+                &-one
+                    font-size: 15px 
+        & br
+            display: none
+        &__image
+            &-rectangle
+                left: 0
+@media screen and (max-width: 992px)
+    .beacon
+        flex-direction: column
+        &__image
+            width: 100%
+        &__info
+            width: 100%
+            margin-top: 600px
+@media screen and (max-width: 576px)
+    .beacon
+        &__image
+            &-beacon
+                padding: 5px
+            &-rectangle
+                display: none
+            &-ellipse
+                display: none
+            &-pattern
+                display: none
+        &__info
+            text-align: center
+            padding: 5px
+            position: static
+            &-title
+                &-desc
+                    padding-left: 0
+                &-one, &-sec, &-three
+                    font-size: 16px
