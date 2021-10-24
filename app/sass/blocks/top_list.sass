@@ -8,6 +8,10 @@
 .top__list-block-one
     grid-area: top__list-block-one
     cursor: pointer
+    &:hover
+        transform-origin: 0 0
+        transform: matrix(1.1, 0.3, 0.2, 0.9, 0.5, 0.1)
+        transition-duration: 6s
 .top__list-block-second
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 47.69%, rgba(0, 0, 0, 0.8) 100%), url(../images/Cuba.png)
     grid-area: top__list-block-second
@@ -19,6 +23,8 @@
         z-index: 1
         position: relative
         top: 90%
+    &:hover
+        filter: grayscale(100%)
 .top__list-block-three
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 47.69%, rgba(0, 0, 0, 0.8) 100%), url(../images/Paris-City.png)
     grid-area: top__list-block-three
@@ -29,6 +35,8 @@
         z-index: 1
         position: relative
         top: 90%
+    &:hover
+        filter: blur(3px)
 .top__list-block-four
     grid-area: top__list-block-four
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 47.69%, rgba(0, 0, 0, 0.8) 100%), url(../images/japan.png)
@@ -40,6 +48,8 @@
         top: 90%
         left: 10px
         z-index: 1
+    &:hover
+        filter: saturate(300%)
 .top__list
     margin-top: 50px
     &-block
