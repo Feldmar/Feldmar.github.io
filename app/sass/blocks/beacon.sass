@@ -77,7 +77,6 @@
             padding-left: 80px
             & img
                 max-height: 600px
-                cursor: pointer
                 &:hover
                     box-shadow: 20px 20px 30px pink, -20px 20px 30px violet, -20px -20px 30px violet, 20px -20px 30px pink
         &-rectangle
@@ -97,6 +96,17 @@
             z-index: 0
             bottom: -445px
             left: 13px
+        &-blick
+            position: relative
+            z-index: 999
+            top: 335px
+            left: 200px
+            opacity: 0
+            cursor: pointer
+            & img
+                width: 75px
+            &:hover
+                opacity: 1
 @media screen and (max-width: 1400px)
     .beacon
         &__image
@@ -133,6 +143,8 @@
             &-ellipse
                 display: none
             &-pattern
+                display: none
+            &-blick
                 display: none
         &__info
             text-align: center
