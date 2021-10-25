@@ -99,14 +99,20 @@
         &-blick
             position: relative
             z-index: 999
-            top: 335px
+            top: 255px
             left: 200px
             opacity: 0
+            height: 0
             cursor: pointer
+            transition: height .4s, opacity .4s
+            transition: all 2s ease-out
             & img
-                width: 75px
+                width: 95px
             &:hover
                 opacity: 1
+                height: 0px
+                transform: scale(1)
+                
 @media screen and (max-width: 1400px)
     .beacon
         &__image
