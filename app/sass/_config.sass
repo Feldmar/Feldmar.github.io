@@ -1,0 +1,38 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Georama:wght@100&family=Noto+Serif&display=swap);
+$font-noto-serif: 'Noto Serif', serif
+$font-georama: 'Georama', sans-serif
+// USER VARIABLES SECTION
+$xxl: 1320px
+$xl: 1140px
+$lg: 960px
+$md: 720px
+$sm: 540px
+$accent: #FF715B
+$gray: #A79997
+$white: #FFFFFF
+$black: #000
+$beige: #F8F8F8
+
+body
+    background-color: $beige
+.wrapper
+    max-width: $xxl
+    margin: 0 auto
+@media(max-width: 1400px)
+    .wrapper
+        max-width: $xl
+@media(max-width: 1200px)
+    .wrapper
+        max-width: $lg
+@media(max-width: 992px)
+    .wrapper
+        max-width: $md
+@media(max-width: 768px)
+    .wrapper
+        max-width: $sm
+@media(max-width: 576px)
+    .wrapper
+        max-width: 100%
+// IMPORT SECTION
+@import reset
