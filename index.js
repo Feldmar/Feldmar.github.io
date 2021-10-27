@@ -1,41 +1,63 @@
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели');
-// const qwe1 = prompt ('Один из просмотренных фильмов?');
+let numberOfFilms;
 
-// const reit = prompt ('На сколько оцените его?');
-const personalMovieDB = {
-  count: 0, 
-  movies: [],
-  actors:{},
-  genres: [],
-  privat: false
-};
-if(numberOfFilms > 0){//если число больше нуля, тогда запускается цикл
-  personalMovieDB.count = numberOfFilms;
-  for(let i = 1; i<= numberOfFilms; i++){
-    let qwe1 = prompt('Один из просмотренных фильмов?');
-    
-    while (!qwe1 || qwe1 === 0){
-      qwe1 = prompt('Один из просмотренных фильмов?');
+function start() {
+    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     }
-    let reit = +prompt('На сколько оцените его?');{
-      while (!(reit >= 1 && reit <= 5)){
-        reit = +prompt('На сколько оцените его?');
-      }
-    }
-    personalMovieDB.movies.push({[qwe1]: reit})
-  }
 }
 
-if (personalMovieDB.count < 10){
-  alert('Мало');
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count <=30){
-  alert('Много');
-} else if (personalMovieDB.count > 30){
-  alert('Зачем столько');
-}else alert ('что')
+start();
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+function rememberMyFilms() { // тут функция будет заполнять 2 фильма в объект personalMovieDB
+		// можно сделать как на уроке и задавать вопросы по количеству numberOfFilms
+    for (let i = 0; i < 2; i++) {
+        const a = prompt('Один из последних просмотренных фильмов?', ''),
+              b = prompt('На сколько оцените его?', '');
+    
+        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('error');
+            i--;
+        }
+    }
+}
+
+  
+
+function detectPersonalLevel() {
+    if (personalMovieDB.count < 10) {
+        console.log("Просмотрено довольно мало фильмов");
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+        console.log("Вы классический зритель");
+    } else if (personalMovieDB.count >= 30) {
+        console.log("Вы киноман");
+    } else {
+        console.log("Произошла ошибка");
+    }
+}
+detectPersonalLevel();
+
+function showMyDB() {
+  if (personalMovieDB.privat === false) {
+  console.log([numberOfFilms]);
+}
+  
+}
+showMyDB();
 
 
 
-
-console.log(personalMovieDB);
-
+//showMyDB(personalMovieDB.privat); эту функцию надо реализовать
+//writeYourGenres(); эту функцию надо реализовать
