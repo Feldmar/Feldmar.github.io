@@ -51,7 +51,7 @@ detectPersonalLevel();
 
 function showMyDB() {
   if (personalMovieDB.privat === false) {
-  console.log([numberOfFilms]);
+  console.log(personalMovieDB);
 }
   
 }
