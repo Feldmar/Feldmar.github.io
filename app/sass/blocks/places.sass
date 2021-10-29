@@ -1,0 +1,21 @@
+.places
+    padding-top: 150px
+    &__area
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        gap: 10px 10px
+        grid-auto-flow: row
+        grid-template-areas: "places__area-one places__area-three places__area-five" "places__area-sec places__area-three places__area-six" "places__area-sec places__area-four places__area-six"
+        &-sec
+            grid-area: places__area-sec
+        &-one
+            grid-area: places__area-one
+        &-three
+            grid-area: places__area-three
+        &-four
+            grid-area: places__area-four
+        &-five
+            grid-area: places__area-five
+        &-six
+            grid-area: places__area-six
