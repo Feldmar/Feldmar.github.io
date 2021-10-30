@@ -1,5 +1,12 @@
 .places
     padding-top: 150px
+    &-title
+        align-self: start
+        text-align: center
+        padding-bottom: 25px
+        font-size: 35px
+        font-family: $font-noto-serif
+        font-weight: bold
     &__area
         display: grid
         grid-template-columns: 1fr 1fr 1fr
@@ -7,6 +14,8 @@
         gap: 25px 25px
         grid-auto-flow: row
         grid-template-areas: "places__area-one places__area-three places__area-five" "places__area-sec places__area-three places__area-six" "places__area-sec places__area-four places__area-six"
+        &-title
+            align-self: start
         &-sec
             grid-area: places__area-sec
             height: 500px
@@ -35,3 +44,69 @@
             height: 500px
             & img
                 max-width: 420px
+@media screen and (max-width: 1200px)
+    .places
+        &__area
+            justify-items: end
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+            grid-template-areas: "places__area-one places__area-three ." "places__area-sec places__area-three ." "places__area-sec places__area-four ." "places__area-five places__area-six ." ". places__area-six ."
+            &-five img
+                display: none
+            &-five
+                content: url(../images/semicircle2.png)
+                justify-self: end
+                position: relative
+                top: 20px
+            &-four
+                align-self: center
+                position: relative
+                bottom: 45px
+            &-six
+                position: relative
+                top: -140px
+            &-sec
+                position: relative
+                top: 50px
+            &-one
+                position: relative
+                bottom: -58px
+@media screen and (max-width: 992px)
+    .places
+        &__area
+            justify-items: end
+            &-sec
+                & img
+                    max-width: 320px
+            &-six
+                top: -195px
+                & img
+                    max-width: 320px
+            &-three
+                & img
+                    max-width: 320px
+            &-five
+                top: -93px
+            &-four
+                align-self: start
+                position: relative
+@media screen and (max-width: 576px)
+    .places
+        padding: 5px
+        &__area
+            justify-items: center
+            gap: 0px 0px
+            grid-auto-flow: row
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr 1fr 0.1fr 
+            grid-template-areas: "places__area-six . ." "places__area-sec . ." "places__area-three . ." "places__area-four . ."
+            &-six
+                top: 0px
+            &-sec
+                top: 0px
+            &-four
+                bottom: 0px
+            &-one
+                display: none
+            &-five
+                display: none
