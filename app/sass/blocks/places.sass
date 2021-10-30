@@ -4,27 +4,34 @@
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         grid-template-rows: 1fr 1fr 1fr
-        gap: 10px 10px
+        gap: 25px 25px
         grid-auto-flow: row
         grid-template-areas: "places__area-one places__area-three places__area-five" "places__area-sec places__area-three places__area-six" "places__area-sec places__area-four places__area-six"
         &-sec
             grid-area: places__area-sec
+            height: 500px
+            & img
+                max-width: 420px
         &-one
             grid-area: places__area-one
+            justify-self: end
+            align-self: end
         &-three
             grid-area: places__area-three
+            height: 500px
+            & img
+                max-width: 420px
         &-four
             grid-area: places__area-four
+            align-self: end
+            justify-self: center
+            &-btn
+                font-size: 18px
         &-five
             grid-area: places__area-five
+            align-self: end
         &-six
             grid-area: places__area-six
-        &-whiteblock
-            max-width: 81%
-            
-            height: 100px
-            background-color: $white
-            position: relative
-            bottom: 8%
-            left: 19%
-            z-index: 99
+            height: 500px
+            & img
+                max-width: 420px
