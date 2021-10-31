@@ -1,4 +1,4 @@
-.about
+.about 
     position: relative
     &__title
         font-size: 35px
@@ -100,7 +100,59 @@
                 border: 5px solid #65CE54
                 box-shadow: 0px 10px 30px #90e297
                 border-radius: 50%
-#mask1
 #group
     left: 35%
     top: 20%
+@media screen and (max-width: 992px)
+    .about 
+        &__block
+            &-center
+                height: 560px
+                &-title
+                    position: relative
+                    left: 40%
+                    top: 17%
+                    & span
+                        font-size: 16px
+                & img
+                    position: relative
+                    padding: 10px
+                    left: 0%
+@media screen and (max-width: 768px)
+    .about 
+        &__block
+            flex-direction: column
+            &-center
+                margin-left: 90px
+                width: 100%
+                justify-content: center
+                height: 650px
+                &-desc
+                    width: 97%
+                    font-size: 15px  
+            &-left
+                width: 0%
+                & #mask1
+                    top: -2%
+                    left: 39%
+                & #mask2
+                    top: -4%
+                    left: -2%
+                & #mask3
+                    top: 67%
+                    left: -6%
+                & #mask4
+                    top: 85%
+                    left: 16%
+            &-right
+                width: 0%
+                & #mask5
+                    top: -2%
+                    right: -10%
+                & #mask6
+                    top: 30%
+                    right: -24% 
+                & #mask7
+                    top: 77%
+                    right: -1%
+                
