@@ -56,7 +56,7 @@ function showMyDB (hidden) {
     }
 }
 
-showMyDB(personalMovieDB.privat);
+showMyDB();
 
 function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
@@ -64,4 +64,28 @@ function writeYourGenres() {
     }
 }
 
+writeYourGenres();
+
+//pr4
+
+function toggleVisibleMyDB() {
+    if(personalMovieDB.private) {
+ personalMovieDB.private === false;
+    }
+    else {
+ personalMovieDB.private === true;
+    }
+}
+toggleVisibleMyDB();
+
+
+
+function writeYourGenres() {
+    for (let i = 0; i <= 3; ++i) {
+        let gan = +prompt(`Ваш любимый жанр под №  ${i}`);
+        if (gan == ' ' || gan == null || gan == undefined) {
+         console.log('Ошибка');
+        } else{
+    personalMovieDB.genres[i - 1] = gan;       
+}}}
 writeYourGenres();
