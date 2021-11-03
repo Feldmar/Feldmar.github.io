@@ -112,12 +112,10 @@
 #group
     left: 35%
     top: 20%
-
 @media screen and (max-width: 992px)
-    .about 
+    .about
         &__block
             &-center
-                height: 560px
                 &-title
                     position: relative
                     left: 40%
@@ -131,38 +129,14 @@
 @media screen and (max-width: 768px)
     .about 
         &__block
-            flex-direction: column
             &-center
-                margin-left: 90px
-                width: 100%
-                justify-content: center
-                height: 650px
+                min-width: 100%
                 &-desc
-                    width: 97%
                     font-size: 15px  
             &-left
-                width: 0%
-                & #mask1
-                    top: -2%
-                    left: 39%
-                & #mask2
-                    top: -4%
-                    left: -2%
-                & #mask3
-                    top: 67%
-                    left: -6%
-                & #mask4
-                    top: 85%
-                    left: 16%
+                width: 0
+                display: none
             &-right
-                width: 0%
-                & #mask5
-                    top: -2%
-                    right: -10%
-                & #mask6
-                    top: 30%
-                    right: -24% 
-                & #mask7
-                    top: 77%
-                    right: -1%
+                width: 0
+                display: none
                 
