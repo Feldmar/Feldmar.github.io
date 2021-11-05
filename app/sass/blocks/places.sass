@@ -19,8 +19,6 @@
         &-sec
             grid-area: places__area-sec
             height: 500px
-            & img
-                max-width: 420px
         &-one
             grid-area: places__area-one
             justify-self: end
@@ -28,8 +26,6 @@
         &-three
             grid-area: places__area-three
             height: 500px
-            & img
-                max-width: 420px
         &-four
             grid-area: places__area-four
             align-self: end
@@ -42,41 +38,34 @@
         &-six
             grid-area: places__area-six
             height: 500px
-            & img
-                max-width: 420px
 @media screen and (max-width: 1200px)
     .places
         &__area
+            position: relative
             justify-items: end
             grid-template-columns: 1fr 1fr
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+            grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr
             grid-template-areas: "places__area-one places__area-three ." "places__area-sec places__area-three ." "places__area-sec places__area-four ." "places__area-five places__area-six ." ". places__area-six ."
             &-five img
                 display: none
             &-five
                 content: url(../images/semicircle2.png)
-                justify-self: end
                 position: relative
-                top: 20px
+                align-self: start
             &-four
                 align-self: center
                 position: relative
-                bottom: 45px
             &-six
                 position: relative
-                top: -140px
             &-sec
                 position: relative
-                top: 50px
             &-one
                 position: relative
-                bottom: -58px
 @media screen and (max-width: 992px)
     .places
         &__area
             justify-items: end
             &-six
-                top: -195px
             &-four
                 align-self: start
                 position: relative
