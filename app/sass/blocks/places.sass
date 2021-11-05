@@ -44,13 +44,14 @@
             position: relative
             justify-items: end
             grid-template-columns: 1fr 1fr
-            grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr
+            grid-template-rows: 0.01fr 0.001fr 0.01fr 0.01fr 0.01fr
             grid-template-areas: "places__area-one places__area-three ." "places__area-sec places__area-three ." "places__area-sec places__area-four ." "places__area-five places__area-six ." ". places__area-six ."
             &-five img
                 display: none
             &-five
                 content: url(../images/semicircle2.png)
                 position: relative
+                top: 35%
                 align-self: start
             &-four
                 align-self: center
@@ -67,8 +68,12 @@
             justify-items: end
             &-six
             &-four
-                align-self: start
+                align-self: center
                 position: relative
+            &-five
+                top: 0
+            &-one
+                bottom: 8%
 @media screen and (max-width: 768px)
     .places
         padding: 5px
@@ -85,6 +90,8 @@
                 top: 0px
             &-four
                 bottom: 0px
+                & #btnplaces
+                    margin-top: 30%
             &-one
                 display: none
             &-five
