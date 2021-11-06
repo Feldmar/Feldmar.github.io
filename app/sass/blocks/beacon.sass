@@ -1,4 +1,5 @@
 .beacon
+    width: 100%
     display: flex
     justify-content: space-evenly
     align-items: baseline
@@ -136,17 +137,23 @@
         flex-direction: column
         &__image
             width: 100%
+            &-beacon
+                position: absolute
+                z-index: 100
+                padding-left: 8%
+                & img
+                    max-height: 550px
+            &-ellipse
+                display: none
         &__info
-            width: 100%
             margin-top: 600px
+            width: 100%
 @media screen and (max-width: 576px)
     .beacon
         &__image
             &-beacon
                 padding: 5px
             &-rectangle
-                display: none
-            &-ellipse
                 display: none
             &-pattern
                 display: none
@@ -159,5 +166,6 @@
             &-title
                 &-desc
                     padding-left: 0
+                    width: 80%
                 &-one, &-sec, &-three
                     font-size: 16px
