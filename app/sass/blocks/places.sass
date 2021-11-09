@@ -1,0 +1,100 @@
+.places
+    padding-top: 150px
+    &-title
+        align-self: start
+        text-align: center
+        padding-bottom: 25px
+        font-size: 35px
+        font-family: $font-noto-serif
+        font-weight: bold
+    &__area
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        gap: 25px 25px
+        grid-auto-flow: row
+        grid-template-areas: "places__area-one places__area-three places__area-five" "places__area-sec places__area-three places__area-six" "places__area-sec places__area-four places__area-six"
+        &-title
+            align-self: start
+        &-sec
+            grid-area: places__area-sec
+            height: 500px
+        &-one
+            grid-area: places__area-one
+            justify-self: end
+            align-self: end
+        &-three
+            grid-area: places__area-three
+            height: 500px
+        &-four
+            grid-area: places__area-four
+            align-self: end
+            justify-self: center
+            &-btn
+                font-size: 18px
+        &-five
+            grid-area: places__area-five
+            align-self: end
+        &-six
+            grid-area: places__area-six
+            height: 500px
+@media screen and (max-width: 1200px)
+    .places
+        &__area
+            position: relative
+            justify-items: end
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 0.01fr 0.001fr 0.01fr 0.01fr 0.01fr
+            grid-template-areas: "places__area-one places__area-three ." "places__area-sec places__area-three ." "places__area-sec places__area-four ." "places__area-five places__area-six ." ". places__area-six ."
+            &-five img
+                display: none
+            &-five
+                content: url(../images/semicircle2.png)
+                position: relative
+                top: 35%
+                align-self: start
+            &-four
+                align-self: center
+                position: relative
+            &-six
+                position: relative
+            &-sec
+                position: relative
+            &-one
+                position: relative
+@media screen and (max-width: 992px)
+    .places
+        &__area
+            justify-items: end
+            &-six
+            &-four
+                align-self: center
+                position: relative
+                &-btn
+                    transform: translate(0,-85%)
+            &-five
+                top: 0
+            &-one
+                bottom: 8%
+@media screen and (max-width: 768px)
+    .places
+        padding: 5px
+        &__area
+            justify-items: center
+            gap: 60px 0px
+            grid-auto-flow: row
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr 1fr 0.1fr 
+            grid-template-areas: "places__area-six . ." "places__area-sec . ." "places__area-three . ." "places__area-four . ."
+            &-six
+                top: 0px
+            &-sec
+                top: 0px
+            &-four
+                bottom: 0px
+                & #btnplaces
+                    margin-top: 50%
+            &-one
+                display: none
+            &-five
+                display: none

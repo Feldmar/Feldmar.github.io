@@ -1,0 +1,57 @@
+.whiteblock
+    max-width: 80%
+    height: 100px
+    background-color: $white
+    position: relative
+    bottom: 10%
+    left: 20%
+    z-index: 99
+    & p
+        font-size: 18px
+        font-weight: 600
+        font-family: $font-noto-serif
+        padding: 15px
+    & i
+        position: absolute
+        bottom: 20%
+        padding: 10px
+        color: $accent
+    & span
+        padding: 10px
+        &.money
+            color: $accent
+            font-weight: 800
+            font-size: 18px
+            font-family: $font-georama
+        &.reviews
+            color: $gray
+            font-family: $font-georama
+            font-weight: bold
+            font-size: 16px
+.rating-mini
+  display: inline-block
+  font-size: 0
+  span
+    padding: 0
+    font-size: 20px
+    line-height: 1
+    color: lightgrey
+  > span
+    &:before
+      content: '★'
+    &.active
+      color: gold
+@media screen and (max-width: 992px)
+  .whiteblock
+    width: 85%
+    left: 20%
+    & i
+      left: 75%
+      top: 5%
+@media screen and (max-width: 576px)
+  .whiteblock
+    & span
+        &.money
+            font-size: 15px
+        &.reviews
+            font-size: 13px

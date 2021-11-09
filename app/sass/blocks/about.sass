@@ -1,0 +1,145 @@
+.about 
+    position: relative
+    &__section
+        background: no-repeat url(../images/backgr.png)
+        background-position: top -80px left -5%
+    &__title
+        font-size: 35px
+        font-family: $font-noto-serif
+        font-weight: bold
+        text-align: center
+        display: flex
+        justify-content: center
+        padding-top: 100px
+        padding-bottom: 20px
+    &__block
+        display: flex
+        align-items: center
+        & img
+            position: absolute
+        &-left
+            width: 30%
+            & #mask1
+                position: absolute
+                top: 0%
+                left: 13%
+                border: 5px solid #C549FF
+                box-shadow: 0px 10px 30px #c59bd8
+                border-radius: 50%
+            & #mask2
+                position: absolute
+                top: 18%
+                border: 5px solid #FFCA45
+                box-shadow: 0px 10px 30px #faf891
+                border-radius: 50%
+            & #mask3
+                position: absolute
+                top: 33%
+                left: 16%
+                border: 5px solid #FF4567
+                box-shadow: 0px 10px 30px #e2909f
+                border-radius: 50%
+            & #mask4
+                position: absolute
+                top: 72%
+                left: 3%
+                border: 5px solid #5F45FF
+                box-shadow: 0px 10px 30px #a59ce0;
+                border-radius: 50%
+        &-center
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            opacity: 2
+            align-items: flex-start
+            width: 40%
+            height: 470px
+            border-top: 10px solid $accent
+            padding: 10px
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2)
+            & #ell
+                opacity: 0.1
+                position: absolute
+                left: 60%
+                bottom: -19%
+            &-title
+                position: relative
+                left: 40%
+                top: 17%
+                & span
+                    font-size: 20px
+                    font-family: $font-noto-serif
+                    font-weight: bold
+                & p
+                    font-family: $font-georama
+                    color: $accent
+                    font-weight: bold
+            & img
+                position: relative
+                padding: 10px
+                left: 12%
+            &-desc
+                text-align: center
+                width: 90%
+                padding-top: 35px
+                font-family: $font-georama
+                font-weight: bold
+                color: $gray
+                font-size: 18px    
+        &-right
+            width: 30%
+            & #mask5
+                position: absolute
+                top: 0%
+                right: 1%
+                border: 5px solid #18A0FB
+                box-shadow: 0px 10px 30px #9bc2d8
+                border-radius: 50%
+            & #mask6
+                position: absolute
+                top: 29%
+                right: 19%
+                border: 5px solid #FFCA45
+                box-shadow: 0px 10px 30px #dfdd86
+                border-radius: 50%
+            & #mask7
+                position: absolute
+                top: 75%
+                right: 6%
+                border: 5px solid #65CE54
+                box-shadow: 0px 10px 30px #90e297
+                border-radius: 50%
+#group
+    left: 35%
+    top: 15%
+@media screen and (max-width: 992px)
+    .about
+        &__block
+            &-center
+                &-title
+                    position: relative
+                    left: 40%
+                    top: 17%
+                    & span
+                        font-size: 16px
+                & img
+                    position: relative
+                    padding: 10px
+                    left: 0%
+#group
+    left: 30%
+    top: 3%
+@media screen and (max-width: 768px)
+    .about 
+        &__block
+            &-center
+                min-width: 100%
+                &-desc
+                    font-size: 15px  
+            &-left
+                width: 0
+                display: none
+            &-right
+                width: 0
+                display: none
+                

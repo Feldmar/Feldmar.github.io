@@ -1,0 +1,45 @@
+.app
+    width: 100%
+    margin-top: 50px
+    border-radius: 15px 
+    display: flex
+    align-items: center
+    background: linear-gradient(90deg, #CEFEFE 0%, #DDF181 100%)
+    &__left
+        padding-left: 5%
+        width: 50%
+        &-img
+            display: flex
+            padding-top: 5%
+            & img
+                padding: 10px
+        &-title
+            font-size: 35px
+            padding: 10px
+            font-weight: bold
+            font-family: $font-noto-serif
+            padding: 10px
+    &__right
+        width: 50%
+@media screen and (max-width: 992px)
+    .app
+        padding-top: 5%
+        padding-bottom: 5%
+        flex-direction: column
+        &__left
+            width: 100%
+            &-img
+                padding-top: 5%
+                & img
+                    padding: 5px
+            &-title
+                font-size: 30px
+        &__right
+            padding-top: 10% 
+            width: 100%
+@media screen and (max-width: 576px)
+    .app
+        &__left
+            &-img
+                align-items: center
+                flex-direction: column
